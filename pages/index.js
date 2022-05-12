@@ -39,7 +39,7 @@ export default function Home() {
                   <div className="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                     <div className="text">
                       <span className="subheading">Hello!</span>
-                      <h1 className="mb-4 mt-3">I'm <span>Yin Yin Kyi</span></h1>
+                      <h1 className="mb-4 mt-3">I&apos;m <span>Yin Yin Kyi</span></h1>
                       <h2 className="mb-4">Senior Software Developer</h2>
                       <p>
                         <a href="#" className="btn btn-primary py-3 px-4">Call me</a>
@@ -60,7 +60,7 @@ export default function Home() {
                   <div className="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                     <div className="text">
                       <span className="subheading">Hello!</span>
-                      <h1 className="mb-4 mt-3">I'm a <span>software developer</span> based in Myanmar</h1>
+                      <h1 className="mb-4 mt-3">I&apos;m a <span>software developer</span> based in Myanmar</h1>
                       <p>
                        <a href="#" className="btn btn-primary py-3 px-4">Call me</a>
                       <a href="#" className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
@@ -133,7 +133,7 @@ export default function Home() {
                   <span className="date">2013-2015</span>
                   <h2>Senior Developer</h2>
                   <span className="position"><a href="https://www.mtg.com.mm/" target={'blank'} style={{'cursor':'pointer'}}>Myanmar Technology Gateway Co.,Ltd</a></span>
-                  <p className="mt-4">MTG sell .mm domain to both local and world wide customer since 2010 as a main service. Our experienced web designers and developers will help develop your organization's digital image and digital branding. The cutting edge technology of Optimized SEO alongside the Content Management System will allow easy self and personal maintenance.</p>
+                  <p className="mt-4">MTG sell .mm domain to both local and world wide customer since 2010 as a main service. Our experienced web designers and developers will help develop your organization&apos;s digital image and digital branding. The cutting edge technology of Optimized SEO alongside the Content Management System will allow easy self and personal maintenance.</p>
                 </div>
               </div>
 
@@ -500,7 +500,7 @@ export default function Home() {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-7 ftco-animate text-center">
-                <h2>I'm <span>Available</span> for freelancing</h2>
+                <h2>I&apos;m <span>Available</span> for freelancing</h2>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                 <p className="mb-0"><a href="#" className="btn btn-primary py-3 px-5">Hire me</a></p>
               </div>
@@ -642,9 +642,7 @@ export default function Home() {
               <div className="col-md-12 text-center">
 
                 <p>
-                Copyright &copy; <Script id="show-banner" strategy="beforeInteractive">
-                {`document.write(new Date().getFullYear())`}
-               </Script> All rights reserved | This template is made with <i className="icon-heart color-danger" aria-hidden="true"></i> by <a href="#" target="_blank">YYK</a>
+                Copyright &copy; 2022 All rights reserved | This template is made with <i className="icon-heart color-danger" aria-hidden="true"></i> by <a href="#" target="_blank">YYK</a>
               </p>
               </div>
             </div>
