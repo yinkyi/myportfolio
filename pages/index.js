@@ -48,8 +48,14 @@ export default function Home() {
     axios.post('/api/email',{name,email,subject,bodyMessage})
      .then(    
      (res)=>{
-      if(res.data.result === 1)
+      if(res.data.result === 1){
         alert(res.data.message);
+        setName('');
+        setEmail('');
+        setSubject('');
+        setBodyMessage('')
+      }
+       
       else
         alert("Send Fail!");
  
@@ -148,7 +154,7 @@ export default function Home() {
                       <li className="d-flex"><span>Address:</span> <span>No 10/11 13 Quarter Hlaing Township...</span></li>
                       <li className="d-flex"><span>Zip code:</span> <span>11051</span></li>
                       <li className="d-flex"><span>Email:</span> <span>yinyinkyi90@gmail.com</span></li>
-                      <li className="d-flex"><span>Phone: </span> <span>+95-9979962810</span></li>
+                      <li className="d-flex"><span>Phone: </span> <span>+959979962810</span></li>
                     </ul>
                   </div>
                 </div>
@@ -218,9 +224,8 @@ export default function Home() {
           <div className="container">
             <div className="row justify-content-center py-5 mt-5">
               <div className="col-md-12 heading-section text-center ftco-animate">
-                <h1 className="big big-2">Services</h1>
-                <h2 className="mb-4">Services</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <h1 className="big big-2">Carriers</h1>
+                <h2 className="mb-4">Carriers</h2>
               </div>
             </div>
             <div className="row">
@@ -597,7 +602,7 @@ export default function Home() {
                     <span className="icon-phone2"></span>
                   </div>
                   <h3 className="mb-4">Contact Number</h3>
-                  <p><a href="tel:+959979962810">+ 95-9979962810</a></p>
+                  <p><a href="tel:+959979962810">+ 959979962810</a></p>
                 </div>
               </div>
               <div className="col-md-12 col-lg-4 d-flex ftco-animate">
