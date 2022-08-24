@@ -1,0 +1,9 @@
+ .invalid p {
+    color: #ca3e51;
+    font-size:0.8rem
+  }
+  
+  .invalid input {
+    border-color: #aa0b20;
+    background-color: #ffeff1;
+  }

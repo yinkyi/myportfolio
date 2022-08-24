@@ -1,9 +1,63 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Fragment } from 'react'
-import styles from '../styles/Home.module.css'
-import Script from 'next/script'
-export default function Home() {
+import { Fragment, useRef, useState,useReducer } from 'react'
+import axios from 'axios'
+import classes from './index.module.css'
+const isNotEmpty = value => value.trim() !=='';
+const isEmailValidate = value => value.trim() !=='' && value.includes('@');
+
+const initial_value = {
+  name:true,
+  email:true,
+  subject:true,
+  message:true
+}
+const validateReducer = (state,actions)=>{
+      if(actions.type=="valid"){
+        return actions.value;
+      }
+      return initial_value
+}
+
+export default function Home() {  
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [subject,setSubject] = useState('');
+  const [bodyMessage,setBodyMessage] = useState('');
+  const [validityState,dispatchValidity] = useReducer(validateReducer,initial_value);
+
+  const sendEmail= async(e)=>{
+    e.preventDefault();   
+    const enterNameValid= isNotEmpty(name);
+    const enterEmailValid= isEmailValidate(email);
+    const enterSubjectValid= isNotEmpty(subject);
+    const enterMessageValid= isNotEmpty(bodyMessage);
+
+    dispatchValidity({"type":"valid",value:{
+        name:enterNameValid,
+        email:enterEmailValid,
+        subject:enterSubjectValid,
+        message:enterMessageValid
+    }});
+    const formvalidate= enterNameValid && enterEmailValid && enterSubjectValid && enterMessageValid;
+    
+    if(!formvalidate){
+      return false;
+    }
+
+    axios.post('/api/email',{name,email,subject,bodyMessage})
+     .then(    
+     (res)=>{
+      if(res.data.result === 1)
+        alert(res.data.message);
+      else
+        alert("Send Fail!");
+ 
+     } 
+     ).catch(
+       (e)=>console.log(e)
+     )
+  }
   return (
     <Fragment>
         <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -21,7 +75,7 @@ export default function Home() {
                 <li className="nav-item"><a href="#services-section" className="nav-link"><span>Services</span></a></li>
                 <li className="nav-item"><a href="#skills-section" className="nav-link"><span>Skills</span></a></li>
                 <li className="nav-item"><a href="#projects-section" className="nav-link"><span>Projects</span></a></li>
-                <li className="nav-item"><a href="#blog-section" className="nav-link"><span>My Blog</span></a></li>
+                {/* <li className="nav-item"><a href="#blog-section" className="nav-link"><span>My Blog</span></a></li> */}
                 <li className="nav-item"><a href="#contact-section" className="nav-link"><span>Contact</span></a></li>
               </ul>
             </div>
@@ -42,8 +96,8 @@ export default function Home() {
                       <h1 className="mb-4 mt-3">I&apos;m <span>Yin Yin Kyi</span></h1>
                       <h2 className="mb-4">Senior Software Developer</h2>
                       <p>
-                        <a href="#" className="btn btn-primary py-3 px-4">Call me</a>
-                      <a href="#" className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
+                        <a href="tel:+959979962810" className="btn btn-primary py-3 px-4">Call me</a>
+                      <a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
                     </div>
                   </div>
                 </div>
@@ -63,7 +117,7 @@ export default function Home() {
                       <h1 className="mb-4 mt-3">I&apos;m a <span>software developer</span> based in Myanmar</h1>
                       <p>
                        <a href="#" className="btn btn-primary py-3 px-4">Call me</a>
-                      <a href="#" className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
+                      <a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
                     </div>
                   </div>
                 </div>
@@ -104,7 +158,7 @@ export default function Home() {
                       <span className="number" data-number="10">0</span>
                       <span>Project complete</span>
                     </p>
-                    <p><a href="#" className="btn btn-primary py-3 px-3">Download CV</a></p>
+                    <p><a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-3 px-3">Download CV</a></p>
                   </div>
                 </div>
               </div>
@@ -154,7 +208,7 @@ export default function Home() {
             </div>
             <div className="row justify-content-center mt-5">
               <div className="col-md-6 text-center ftco-animate">
-                <p><a href="#" className="btn btn-primary py-4 px-5">Download CV</a></p>
+                <p><a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-4 px-5">Download CV</a></p>
               </div>
             </div>
           </div>
@@ -391,69 +445,79 @@ export default function Home() {
             <div className="row justify-content-center pb-5">
               <div className="col-md-12 heading-section text-center ftco-animate">
                 <h1 className="big big-2">Projects</h1>
-                <h2 className="mb-4">Our Projects</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <h2 className="mb-4">My Projects</h2>
+                <p>Please, check my projects out here.</p>
               </div>
             </div>
             <div className="row">
               <div className="col-md-4">
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/project-4.jpg)'}}>
+                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-3.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                    <span>Web Design</span>
+                    <h3><a href="https://chatbot.tharapa.ai" target={'_blank'}>Building chatbot just one click.</a></h3>
+                    <span>Tharapa Chatbot</span>
                   </div>
                 </div>
               </div>
               <div className="col-md-8">
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/project-5.jpg)'}}>
+                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-1.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                    <span>Web Design</span>
+                    <h3><a href="https://chatbot.tharapa.ai/" target={'_blank'}>Chatbot analytic dashboard.</a></h3>
+                    <span>Tharapa Chatbot</span>
                   </div>
                 </div>
               </div>
 
               <div className="col-md-8">
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center"  style={{'backgroundImage': 'url(/images/project-1.jpg)'}}>
+                <div className="project img ftco-animate d-flex justify-content-center align-items-center"  style={{'backgroundImage': 'url(/images/chatbot-2.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                    <span>Web Design</span>
+                    <h3><a href="https://chatbot.tharapa.ai/" target={'_blank'}>Building chatbot menu.</a></h3>
+                    <span>Tharapa Chatbot</span>
                   </div>
                 </div>
 
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/project-6.jpg)'}}>
+                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/portal-1.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                    <span>Web Design</span>
+                    <h3><a href="https://portal.tharapa.ai/">Stock Control.</a></h3>
+                    <span>Tharapa Portal</span>
                   </div>
                 </div>
               </div>
               <div className="col-md-4">
                 <div className="row">
                   <div className="col-md-12">
-                    <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/project-2.jpg)'}}>
+                    <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-4.png)'}}>
                       <div className="overlay"></div>
                       <div className="text text-center p-4">
-                        <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                        <span>Web Design</span>
+                        <h3><a href="https://chatbot.tharapa.ai/">Create chatbot flow.</a></h3>
+                        <span>Tharapa Chatbot</span>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-12">
-                    <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(images/project-3.jpg)'}}>
+                    <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(images/portal-2.png)'}}>
                       <div className="overlay"></div>
                       <div className="text text-center p-4">
-                        <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                        <span>Web Design</span>
+                        <h3><a href="https://portal.tharapa.ai/">Sale order management.</a></h3>
+                        <span>Tharapa Portal</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="col-md-12">
+                <div style="background-position: top center !important;" className="project img ftco-animate d-flex justify-center-center align-items-center" style={{'backgroundImage': 'url(/images/tharapa-mart-1.png)'}}>
+                  <div className="overlay"></div>
+                  <div className="text text-center p-4">
+                    <h3><a href="https://tharapamart.com/" target={'_blank'}>Let's shopping with us.</a></h3>
+                    <span>Tharapa Mart</span>
+                  </div>
+                </div>
+              </div>
+             
             </div>
           </div>
         </section>
@@ -500,8 +564,7 @@ export default function Home() {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-7 ftco-animate text-center">
-                <h2>I&apos;m <span>Available</span> for freelancing</h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h2>I&apos;m <span>open</span> to work</h2>                
                 <p className="mb-0"><a href="#" className="btn btn-primary py-3 px-5">Hire me</a></p>
               </div>
             </div>
@@ -519,25 +582,25 @@ export default function Home() {
             </div>
 
             <div className="row d-flex contact-info mb-5">
-              <div className="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div className="col-md-12 col-lg-4 d-flex ftco-animate">
                 <div className="align-self-stretch box p-4 text-center">
                   <div className="icon d-flex align-items-center justify-content-center">
                     <span className="icon-map-signs"></span>
                   </div>
                   <h3 className="mb-4">Address</h3>
-                  <p>No 10/11 13 Quarter Hlaing Township...</p>
+                  <p>No(10/11), 13 Revenue, Hlaing Township, Insein Road, Yangon.</p>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div className="col-md-12 col-lg-4 d-flex ftco-animate">
                 <div className="align-self-stretch box p-4 text-center">
                   <div className="icon d-flex align-items-center justify-content-center">
                     <span className="icon-phone2"></span>
                   </div>
                   <h3 className="mb-4">Contact Number</h3>
-                  <p><a href="tel://1234567920">+ 95-9979962810</a></p>
+                  <p><a href="tel:+959979962810">+ 95-9979962810</a></p>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div className="col-md-12 col-lg-4 d-flex ftco-animate">
                 <div className="align-self-stretch box p-4 text-center">
                   <div className="icon d-flex align-items-center justify-content-center">
                     <span className="icon-paper-plane"></span>
@@ -546,34 +609,29 @@ export default function Home() {
                   <p><a href="mailto:info@yoursite.com">yinyinkyi90@gmail.com</a></p>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div className="align-self-stretch box p-4 text-center">
-                  <div className="icon d-flex align-items-center justify-content-center">
-                    <span className="icon-globe"></span>
-                  </div>
-                  <h3 className="mb-4">Website</h3>
-                  <p><a href="#">yoursite.com</a></p>
-                </div>
-              </div>
             </div>
 
             <div className="row no-gutters block-9">
               <div className="col-md-6 order-md-last d-flex">
                 <form action="#" className="bg-light p-4 p-md-5 contact-form">
-                  <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Your Name"/>
+                  <div className={`form-group  ${validityState.name?'':classes.invalid}`}>                      
+                        <input type="text" className="form-control" placeholder="Your Name" value={name} onChange={(e)=>setName(e.target.value)}/>
+                        {!validityState.name && <p>please fill name!</p>}                      
+                  </div>
+                  <div className={`form-group  ${validityState.email?'':classes.invalid}`}>
+                    <input type="text" className="form-control" placeholder="Your Email (example@gmail.com)" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                    {!validityState.email && <p>please fill email with correct form!</p>}  
+                  </div>
+                  <div className={`form-group  ${validityState.subject?'':classes.invalid}`}>
+                    <input type="text" className="form-control" placeholder="Subject" value={subject} onChange={(e)=>setSubject(e.target.value)}/>
+                    {!validityState.subject && <p>please fill subject!</p>}  
+                  </div>
+                  <div className={`form-group  ${validityState.message?'':classes.invalid}`}>
+                    <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message" value={bodyMessage} onChange={(e)=>setBodyMessage(e.target.value)}></textarea>
+                    {!validityState.message && <p>please fill message!</p>}  
                   </div>
                   <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Your Email"/>
-                  </div>
-                  <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Subject"/>
-                  </div>
-                  <div className="form-group">
-                    <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
-                  </div>
-                  <div className="form-group">
-                    <input type="submit" value="Send Message" className="btn btn-primary py-3 px-5"/>
+                    <input type="submit" onClick={sendEmail} value="Send Message" className="btn btn-primary py-3 px-5"/>
                   </div>
                 </form>
           
@@ -588,59 +646,18 @@ export default function Home() {
 		
 
         <footer className="ftco-footer ftco-section">
-          <div className="container">
-            <div className="row mb-5">
-              <div className="col-md">
-                <div className="ftco-footer-widget mb-4">
-                  <h2 className="ftco-heading-2">About</h2>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                    <li className="ftco-animate"><a href="https://www.facebook.com/yinyin.yinkyi/" target={'blank'}><span className="icon-facebook"></span></a></li>
-                    <li className="ftco-animate"><a href="https://www.linkedin.com/in/yin-yin-kyi-1a631274/" target={'blank'}><span className="icon-linkedin"></span></a></li>
+          <div className="container">            
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <ul className="ftco-footer-social list-unstyled">
+                  <li className="ftco-animate"><a href="https://www.facebook.com/yinyin.yinkyi/" target={'blank'}><span className="icon-facebook"></span></a></li>
+                  <li className="ftco-animate"><a href="https://www.linkedin.com/in/yin-yin-kyi-1a631274/" target={'blank'}><span className="icon-linkedin"></span></a></li>
                     
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md">
-                <div className="ftco-footer-widget mb-4 ml-md-4">
-                  <h2 className="ftco-heading-2">Links</h2>
-                  <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Home</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>About</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Services</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md">
-                 <div className="ftco-footer-widget mb-4">
-                  <h2 className="ftco-heading-2">Services</h2>
-                  <ul className="list-unstyled">
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                    <li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md">
-                <div className="ftco-footer-widget mb-4">
-                  <h2 className="ftco-heading-2">Have a Questions?</h2>
-                  <div className="block-23 mb-3">
-                    <ul>
-                      <li><span className="icon icon-map-marker"></span><span className="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                      <li><a href="#"><span className="icon icon-phone"></span><span className="text">+2 392 3929 210</span></a></li>
-                      <li><a href="#"><span className="icon icon-envelope"></span><span className="text">info@yourdomain.com</span></a></li>
-                    </ul>
-                  </div>
-                </div>
+                </ul>                
               </div>
             </div>
             <div className="row">
-              <div className="col-md-12 text-center">
-
+              <div className="col-md-12 text-center">                
                 <p>
                 Copyright &copy; 2022 All rights reserved | This template is made with <i className="icon-heart color-danger" aria-hidden="true"></i> by <a href="#" target="_blank">YYK</a>
               </p>
