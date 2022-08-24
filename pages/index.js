@@ -565,7 +565,7 @@ export default function Home() {
                 <div className="block-18">
                   <div className="text">
                     <strong className="number" data-number="6">0</strong>
-                    <span>Window Projects(C#.Net/VB.Net)</span>
+                    <span>C#.Net/VB.Net Projects</span>
                   </div>
                 </div>
               </div>
@@ -573,12 +573,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="ftco-section ftco-hireme img margin-top" style={{'backgroundImage': 'url(/images/bg_1.jpg)'}}>
+        <section className="ftco-section ftco-hireme img margin-top" style={{'backgroundImage': 'url(/images/hire-me-2.jpg)'}}>
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-7 ftco-animate text-center">
                 <h2>I&apos;m <span>open</span> to work</h2>                
-                <p className="mb-0"><a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-3 px-5">Hire me</a></p>
+                <p className="mb-0">
+                  <a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-3 px-5">Hire me</a>                  
+                </p>
               </div>
             </div>
           </div>
