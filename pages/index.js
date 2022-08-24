@@ -512,7 +512,7 @@ export default function Home() {
                 <div  className="project img ftco-animate d-flex justify-center-center align-items-center" style={{'backgroundImage': 'url(/images/tharapa-mart-1.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    
+                    <h3><a target="_blank" href="https://tharapamart.com/" rel="noopener noreferrer">Shopping with us.</a></h3>
                     <span>Tharapa Mart</span>
                   </div>
                 </div>
