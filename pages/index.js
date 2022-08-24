@@ -178,7 +178,7 @@ export default function Home() {
               <div className="col-md-10 heading-section text-center ftco-animate">
                 <h1 className="big big-2">Resume</h1>
                 <h2 className="mb-4">Resume</h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>My working experience</p>
               </div>
             </div>
             <div className="row">
