@@ -454,7 +454,7 @@ export default function Home() {
                 <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-3.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://chatbot.tharapa.ai">Building chatbot just one click.</a></h3>
+                    <h3><a target="_blank" href="https://chatbot.tharapa.ai" rel="noopener noreferrer">Building chatbot just one click.</a></h3>
                     <span>Tharapa Chatbot</span>
                   </div>
                 </div>
@@ -463,7 +463,7 @@ export default function Home() {
                 <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-1.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://chatbot.tharapa.ai/">Chatbot analytic dashboard.</a></h3>
+                    <h3><a target="_blank" href="https://chatbot.tharapa.ai/" rel="noopener noreferrer">Chatbot analytic dashboard.</a></h3>
                     <span>Tharapa Chatbot</span>
                   </div>
                 </div>
@@ -473,7 +473,7 @@ export default function Home() {
                 <div className="project img ftco-animate d-flex justify-content-center align-items-center"  style={{'backgroundImage': 'url(/images/chatbot-2.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://chatbot.tharapa.ai/">Building chatbot menu.</a></h3>
+                    <h3><a target="_blank" href="https://chatbot.tharapa.ai/" rel="noopener noreferrer">Building chatbot menu.</a></h3>
                     <span>Tharapa Chatbot</span>
                   </div>
                 </div>
@@ -481,7 +481,7 @@ export default function Home() {
                 <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/portal-1.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://portal.tharapa.ai/">Stock Control.</a></h3>
+                    <h3><a target="_blank" href="https://portal.tharapa.ai/" rel="noopener noreferrer">Stock Control.</a></h3>
                     <span>Tharapa Portal</span>
                   </div>
                 </div>
@@ -492,7 +492,7 @@ export default function Home() {
                     <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-4.png)'}}>
                       <div className="overlay"></div>
                       <div className="text text-center p-4">
-                        <h3><a target="_blank" href="https://chatbot.tharapa.ai/">Create chatbot flow.</a></h3>
+                        <h3><a target="_blank" href="https://chatbot.tharapa.ai/" rel="noopener noreferrer">Create chatbot flow.</a></h3>
                         <span>Tharapa Chatbot</span>
                       </div>
                     </div>
@@ -501,7 +501,7 @@ export default function Home() {
                     <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(images/portal-2.png)'}}>
                       <div className="overlay"></div>
                       <div className="text text-center p-4">
-                        <h3><a target="_blank" href="https://portal.tharapa.ai/">Sale order management.</a></h3>
+                        <h3><a target="_blank" href="https://portal.tharapa.ai/" rel="noopener noreferrer">Sale order management.</a></h3>
                         <span>Tharapa Portal</span>
                       </div>
                     </div>
@@ -512,7 +512,7 @@ export default function Home() {
                 <div  className="project img ftco-animate d-flex justify-center-center align-items-center" style={{'backgroundImage': 'url(/images/tharapa-mart-1.png);background-position: top center !important;'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://tharapamart.com/">Let's shopping with us.</a></h3>
+                    <h3><a target="_blank" href="https://tharapamart.com/" rel="noopener noreferrer">Let's shopping with us.</a></h3>
                     <span>Tharapa Mart</span>
                   </div>
                 </div>
