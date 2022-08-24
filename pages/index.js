@@ -178,7 +178,7 @@ export default function Home() {
               <div className="col-md-10 heading-section text-center ftco-animate">
                 <h1 className="big big-2">Resume</h1>
                 <h2 className="mb-4">Resume</h2>
-                <p>My working experience</p>
+                <p>My working experiences!</p>
               </div>
             </div>
             <div className="row">
@@ -532,32 +532,40 @@ export default function Home() {
               <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div className="block-18">
                   <div className="text">
-                    <strong className="number" data-number="100">0</strong>
-                    <span>Awards</span>
+                    <strong className="number" data-number="6">0</strong>
+                    <span>PHP/Laravel Projects</span>
                   </div>
                 </div>
               </div>
               <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div className="block-18">
                   <div className="text">
-                    <strong className="number" data-number="1200">0</strong>
-                    <span>Complete Projects</span>
+                    <strong className="number" data-number="3">0</strong>
+                    <span>Vuejs Projects</span>
                   </div>
                 </div>
               </div>
               <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div className="block-18">
                   <div className="text">
-                    <strong className="number" data-number="1200">0</strong>
-                    <span>Happy Customers</span>
+                    <strong className="number" data-number="2">0</strong>
+                    <span>Reactjs Projects</span>
                   </div>
                 </div>
               </div>
               <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div className="block-18">
                   <div className="text">
-                    <strong className="number" data-number="500">0</strong>
-                    <span>Cups of coffee</span>
+                    <strong className="number" data-number="1">0</strong>
+                    <span>Nodejs Projects</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                <div className="block-18">
+                  <div className="text">
+                    <strong className="number" data-number="6">0</strong>
+                    <span>Window Projects(C#.Net/VB.Net)</span>
                   </div>
                 </div>
               </div>
@@ -570,7 +578,7 @@ export default function Home() {
             <div className="row justify-content-center">
               <div className="col-md-7 ftco-animate text-center">
                 <h2>I&apos;m <span>open</span> to work</h2>                
-                <p className="mb-0"><a href="#" className="btn btn-primary py-3 px-5">Hire me</a></p>
+                <p className="mb-0"><a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-3 px-5">Hire me</a></p>
               </div>
             </div>
           </div>
