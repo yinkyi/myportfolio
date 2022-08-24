@@ -122,7 +122,7 @@ export default function Home() {
                       <span className="subheading">Hello!</span>
                       <h1 className="mb-4 mt-3">I&apos;m a <span>software developer</span> based in Myanmar</h1>
                       <p>
-                       <a href="#" className="btn btn-primary py-3 px-4">Call me</a>
+                       <a href="tel:+959979962810" className="btn btn-primary py-3 px-4">Call me</a>
                       <a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
                     </div>
                   </div>
