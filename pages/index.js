@@ -30,8 +30,7 @@ export default function Home() {
   const [validityState,dispatchValidity] = useReducer(validateReducer,initial_value);
   const [loading,setLoading] = useState(false);
   const sendEmail= async(e)=>{
-    e.preventDefault();   
-    setLoading(true);
+    e.preventDefault();    
     const enterNameValid= isNotEmpty(name);
     const enterEmailValid= isEmailValidate(email);
     const enterSubjectValid= isNotEmpty(subject);
@@ -48,7 +47,7 @@ export default function Home() {
     if(!formvalidate){
       return false;
     }
-
+    setLoading(true);
     axios.post('/api/email',{name,email,subject,bodyMessage})
      .then(    
      (res)=>{
