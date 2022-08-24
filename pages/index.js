@@ -451,7 +451,7 @@ export default function Home() {
               <div className="col-md-12 heading-section text-center ftco-animate">
                 <h1 className="big big-2">Projects</h1>
                 <h2 className="mb-4">My Projects</h2>
-                <p>Please, check my projects out here.</p>
+                <p>Please, check my recent projects out here.</p>
               </div>
             </div>
             <div className="row">
