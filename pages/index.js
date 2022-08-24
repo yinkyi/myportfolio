@@ -509,7 +509,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-12">
-                <div  className="project img ftco-animate d-flex justify-center-center align-items-center" style={{'backgroundImage': 'url(/images/tharapa-mart-1.png);background-position: top center !important;'}}>
+                <div  className="project img ftco-animate d-flex justify-center-center align-items-center" style={{'backgroundImage': 'url(/images/tharapa-mart-1.png)'}}>
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
                     <h3><a target="_blank" href="https://tharapamart.com/" rel="noopener noreferrer">Let's shopping with us.</a></h3>
