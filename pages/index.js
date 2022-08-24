@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { Fragment, useRef, useState,useReducer } from 'react'
 import axios from 'axios'
 import classes from './index.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee,faSpinner } from '@fortawesome/free-solid-svg-icons'
+
 const isNotEmpty = value => value.trim() !=='';
 const isEmailValidate = value => value.trim() !=='' && value.includes('@');
 
@@ -25,9 +28,10 @@ export default function Home() {
   const [subject,setSubject] = useState('');
   const [bodyMessage,setBodyMessage] = useState('');
   const [validityState,dispatchValidity] = useReducer(validateReducer,initial_value);
-
+  const [loading,setLoading] = useState(false);
   const sendEmail= async(e)=>{
     e.preventDefault();   
+    setLoading(true);
     const enterNameValid= isNotEmpty(name);
     const enterEmailValid= isEmailValidate(email);
     const enterSubjectValid= isNotEmpty(subject);
@@ -49,11 +53,11 @@ export default function Home() {
      .then(    
      (res)=>{
       if(res.data.result === 1){
-        alert(res.data.message);
+        setLoading(false);
         setName('');
         setEmail('');
         setSubject('');
-        setBodyMessage('')
+        setBodyMessage('');
       }
        
       else
@@ -646,7 +650,10 @@ export default function Home() {
                     {!validityState.message && <p>please fill message!</p>}  
                   </div>
                   <div className="form-group">
-                    <input type="submit" onClick={sendEmail} value="Send Message" className="btn btn-primary py-3 px-5"/>
+                    <button type="submit" onClick={sendEmail} className="btn btn-primary py-3 px-5">
+                      {loading?<FontAwesomeIcon icon={faSpinner} spin />:''}
+                      Send Message
+                    </button>
                   </div>
                 </form>
           
