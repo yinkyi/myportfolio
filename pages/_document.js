@@ -15,8 +15,17 @@ export default function Document() {
         <link rel="icon" href="images/favicon.png"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
       <body data-spy="scroll" data-target=".fixed-top">
-        <Main />
-          <NextScript />  
+        <Script src="js/jquery.min.js" 
+        strategy="beforeInteractive"></Script>
+        <Script  src="js/bootstrap.min.js"
+        strategy="beforeInteractive"></Script>
+        <Script  src="js/jquery.easing.min.js"
+        strategy="beforeInteractive"></Script>
+        <Script  src="js/scripts.js"
+        strategy="beforeInteractive"></Script>
+        <Main />       
+        <NextScript />  
+        
       </body>
     </Html>
   )
