@@ -132,7 +132,7 @@ export default function Project() {
                                 </li>
                             </ul>
 
-                            <a className="btn-solid-reg mb-5" href="/">Back</a>
+                            <Link className="btn-solid-reg mb-5" href="/">Back</Link>
                         </div> 
                     </div> 
                 </div> 
