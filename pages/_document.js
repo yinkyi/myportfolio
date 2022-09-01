@@ -7,53 +7,16 @@ export default function Document() {
     <Html>
     <Head/>       
          
-          <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"  />
-
-           <link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css" />
-          <link rel="stylesheet" href="/css/animate.css"  />
-
-          <link rel="stylesheet" href="/css/owl.carousel.min.css"  />
-          <link rel="stylesheet" href="/css/owl.theme.default.min.css"  />
-          <link rel="stylesheet" href="/css/magnific-popup.css"  />
-
-          <link rel="stylesheet" href="/css/aos.css"  />
-
-          <link rel="stylesheet" href="/css/ionicons.min.css"  />
-
-          <link rel="stylesheet" href="/css/flaticon.css"  />
-          <link rel="stylesheet" href="/css/icomoon.css"  />
-          <link rel="stylesheet" href="/css/style.css"  /> 
-   
-      <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/fontawesome-all.css" rel="stylesheet"/>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link rel="icon" href="images/favicon.png"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+      <body data-spy="scroll" data-target=".fixed-top">
         <Main />
-        <NextScript />      
-        {/* <Script src="/static/js/jquery.min.js" 
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/jquery-migrate-3.0.1.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/popper.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/bootstrap.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/jquery.easing.1.3.js"
-        strategy="beforeInteractive"></Script>
-        <Script src="/static/js/jquery.waypoints.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/jquery.stellar.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script src="/static/js/owl.carousel.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/jquery.magnific-popup.min.js"
-        strategy="beforeInteractive"></Script>        
-        <Script   src="/static/js/aos.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/jquery.animateNumber.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/scrollax.min.js"
-        strategy="beforeInteractive"></Script>
-        <Script  src="/static/js/main.js"
-        strategy="afterInteractive"></Script>  */}
-        
+          <NextScript />  
       </body>
     </Html>
   )

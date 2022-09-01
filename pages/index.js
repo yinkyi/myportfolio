@@ -69,630 +69,446 @@ export default function Home() {
   }
   return (
     <Fragment>
-        <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-          <div className="container">
-            <a className="navbar-brand" href="index.html">Yin Yin Kyi</a>
-            <button className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="oi oi-menu"></span> Menu
-            </button>
-
-            <div className="collapse navbar-collapse" id="ftco-nav">
-              <ul className="navbar-nav nav ml-auto">
-                <li className="nav-item"><a href="#home-section" className="nav-link"><span>Home</span></a></li>
-                <li className="nav-item"><a href="#about-section" className="nav-link"><span>About</span></a></li>
-                <li className="nav-item"><a href="#resume-section" className="nav-link"><span>Resume</span></a></li>
-                <li className="nav-item"><a href="#services-section" className="nav-link"><span>Carriers</span></a></li>
-                <li className="nav-item"><a href="#skills-section" className="nav-link"><span>Skills</span></a></li>
-                <li className="nav-item"><a href="#projects-section" className="nav-link"><span>Projects</span></a></li>
-                {/* <li className="nav-item"><a href="#blog-section" className="nav-link"><span>My Blog</span></a></li> */}
-                <li className="nav-item"><a href="#contact-section" className="nav-link"><span>Contact</span></a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <section id="home-section" className="hero">
-          <div className="home-slider  owl-carousel">
-            <div className="slider-item ">
-              <div className="overlay"></div>
-              <div className="container">
-                <div className="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                  <div className="one-third js-fullheight order-md-last img" style={{'backgroundImage':'url(images/my_1.png)'}}>
-                    <div className="overlay"></div>
-                  </div>
-                  <div className="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                    <div className="text">
-                      <span className="subheading">Hello!</span>
-                      <h1 className="mb-4 mt-3">I&apos;m <span>Yin Yin Kyi</span></h1>
-                      <h2 className="mb-4">Senior Software Developer</h2>
-                      <p>
-                        <a href="tel:+959979962810" className="btn btn-primary py-3 px-4">Call me</a>
-                      <a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="slider-item">
-              <div className="overlay"></div>
-              <div className="container">
-                <div className="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                  <div className="one-third js-fullheight order-md-last img" style={{'backgroundImage':'url(/images/my_2.png)'}}>
-                    <div className="overlay"></div>
-                  </div>
-                  <div className="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                    <div className="text">
-                      <span className="subheading">Hello!</span>
-                      <h1 className="mb-4 mt-3">I&apos;m a <span>software developer</span> based in Myanmar</h1>
-                      <p>
-                       <a href="tel:+959979962810" className="btn btn-primary py-3 px-4">Call me</a>
-                      <a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-white btn-outline-white py-3 px-4">Download CV</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="ftco-about img ftco-section ftco-no-pb" id="about-section">
-          <div className="container">
-            <div className="row d-flex">
-              <div className="col-md-6 col-lg-5 d-flex">
-                <div className="img-about img d-flex align-items-stretch">
-                  <div className="overlay"></div>
-                  <div className="img d-flex align-self-stretch align-items-center" style={{'backgroundImage':'url(images/my_1.png)'}}>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-7 pl-lg-5 pb-5">
-                <div className="row justify-content-start pb-3">
-                  <div className="col-md-12 heading-section ftco-animate">
-                    <h1 className="big">About</h1>
-                    <h2 className="mb-4">About Me</h2>
-                    <p>Fist of all, let me introduce myself &#9995;. Having 9 years of professional experience in the IT industry. I am decisive, goal-oriented, self-motivated, willing to work hard, and a fast learner.</p>
-                    <ul className="about-info mt-4 px-md-0 px-2">
-                      <li className="d-flex"><span>Name:</span> <span>Yin Yin Kyi</span></li>
-                      <li className="d-flex"><span>Date of birth:</span> <span>February 07, 1990</span></li>
-                      <li className="d-flex"><span>Address:</span> <span>No 10/11 13 Quarter Hlaing Township...</span></li>
-                      <li className="d-flex"><span>Zip code:</span> <span>11051</span></li>
-                      <li className="d-flex"><span>Email:</span> <span>yinyinkyi90@gmail.com</span></li>
-                      <li className="d-flex"><span>Phone: </span> <span>+959979962810</span></li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="counter-wrap ftco-animate d-flex mt-md-3">
-                  <div className="text">
-                    <p className="mb-4">
-                      <span className="number" data-number="10">0</span>
-                      <span>Project complete</span>
-                    </p>
-                    <p><a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-3 px-3">Download CV</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="ftco-section ftco-no-pb" id="resume-section">
-          <div className="container">
-            <div className="row justify-content-center pb-5">
-              <div className="col-md-10 heading-section text-center ftco-animate">
-                <h1 className="big big-2">Resume</h1>
-                <h2 className="mb-4">Resume</h2>
-                <p>My working experiences!</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-6">
-                <div className="resume-wrap ftco-animate" style={{'height':'417px'}}>
-                  <span className="date">2018-present</span>
-                  <h2>Senior Developer</h2>
-                  <span className="position"><a href="https://baganit.com/" target={'blank'} style={{'cursor':'pointer'}}>Bagan Innovation Technology Co.,Ltd</a></span>
-                  <p className="mt-4">Bagan Innovation Technology (singapore) Private Limited was founded in Singapore since 2015 with a major focus of developing innovative mobile apps and services for Myanmar users. We build consumer mobile apps and content platforms. We are specialized in Burmese language processing.</p>
-                </div>
-                <div className="resume-wrap ftco-animate">
-                  <span className="date">2013-2015</span>
-                  <h2>Senior Developer</h2>
-                  <span className="position"><a href="https://www.mtg.com.mm/" target={'blank'} style={{'cursor':'pointer'}}>Myanmar Technology Gateway Co.,Ltd</a></span>
-                  <p className="mt-4">MTG sell .mm domain to both local and world wide customer since 2010 as a main service. Our experienced web designers and developers will help develop your organization&apos;s digital image and digital branding. The cutting edge technology of Optimized SEO alongside the Content Management System will allow easy self and personal maintenance.</p>
-                </div>
-              </div>
-
-              <div className="col-md-6">
-                <div className="resume-wrap ftco-animate">
-                  <span className="date">2015-2018</span>
-                  <h2>Software Developer</h2>
-                  <span className="position"><a href="http://solidplm.com/" target={'blank'} style={{'cursor':'pointer'}}>SolidCad Technology Pte (Singapore Base)</a></span>
-                  <p className="mt-4">The SolidCAD Technologies was established in 1996 to provide design and manufacturing services to the Engineering Community in Singapore and the region. Our clients include Philips Electronics, Motorola, HP and Siemens. In 2005, SolidCAD Technologies was appointed as AutodeskSystems Center to provide products and services for Autodesk Solutions.</p>
-                </div>
-                <div className="resume-wrap ftco-animate">
-                  <span className="date">2011-2013</span>
-                  <h2>Junior Developer</h2>
-                  <span className="position"><a href="http://www.trustlinkmm.com/" target={'blank'} style={{'cursor':'pointer'}}>TrustLink Co.,Ltd</a></span>
-                  <p className="mt-4">Trustlink has been a System and/or Solution Integration Company by delivering state projects and eGovernment projects, providing ICT and security hardware, developing systems and software, and supporting with range end-to-end solutions as total complete solutions. We have a good reputation in the financial industry for supplying World No.1 ATM/CDM to banks.</p>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-center mt-5">
-              <div className="col-md-6 text-center ftco-animate">
-                <p><a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-4 px-5">Download CV</a></p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="ftco-section" id="services-section">
-          <div className="container">
-            <div className="row justify-content-center py-5 mt-5">
-              <div className="col-md-12 heading-section text-center ftco-animate">
-                <h1 className="big big-2">Carriers</h1>
-                <h2 className="mb-4">Carriers</h2>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" className="services-1">
-                  <span className="icon">
-                    <i className="flaticon-analysis"></i>
-                  </span>
-                  <div className="desc">
-                    <h3 className="mb-5">FrontEnd Developer</h3>
-                  </div>
-                </a>
-              </div>
-              <div className="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" className="services-1">
-                  <span className="icon">
-                    <i className="flaticon-flasks"></i>
-                  </span>
-                  <div className="desc">
-                    <h3 className="mb-5">BackEnd Developer</h3>
-                  </div>
-                </a>
-              </div>
-              <div className="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" className="services-1">
-                  <span className="icon">
-                    <i className="flaticon-ideas"></i>
-                  </span>
-                  <div className="desc">
-                    <h3 className="mb-5">Window Application Developer</h3>
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-		
-        <section className="ftco-section" id="skills-section">
-          <div className="container">
-            <div className="row justify-content-center pb-5">
-              <div className="col-md-12 heading-section text-center ftco-animate">
-                <h1 className="big big-2">Skills</h1>
-                <h2 className="mb-4">My Skills</h2>
-                <p>Throughout my developer life, I got beautiful experiences in below technologies.</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>PHP</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-1" role="progressbar" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:90+'%'}}>
-                      <span>90%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>Laravel</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-2" role="progressbar" aria-valuenow="85"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:90+'%'}}>
-                      <span>90%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>JQUERY</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-2" role="progressbar" aria-valuenow="85"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:90+'%'}}>
-                      <span>90%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>JAVASCRIPT</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-2" role="progressbar" aria-valuenow="85"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:90+'%'}}>
-                      <span>90%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>MYSQL</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-2" role="progressbar" aria-valuenow="85"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:90+'%'}}>
-                      <span>90%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>MSSQL</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-2" role="progressbar" aria-valuenow="85"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:90+'%'}}>
-                      <span>90%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>Vuejs</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-3" role="progressbar" aria-valuenow="95"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:80+'%'}}>
-                      <span>80%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>MONGODB</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-3" role="progressbar" aria-valuenow="95"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:80+'%'}}>
-                      <span>80%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>C#.Net</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-6" role="progressbar" aria-valuenow="80"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:80+'%'}}>
-                      <span>80%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>Reactjs</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:60+'%'}}>
-                      <span>60%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>Codeigniter</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-6" role="progressbar" aria-valuenow="80"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:50+'%'}}>
-                      <span>50%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>NEXTjs</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:50+'%'}}>
-                      <span>50%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>               
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>Linux</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:70+'%'}}>
-                      <span>70%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>GIT Control</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:60+'%'}}>
-                      <span>60%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 animate-box">
-                <div className="progress-wrap ftco-animate">
-                  <h3>Tailwind css</h3>
-                  <div className="progress">
-                    <div className="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100" style={{width:50+'%'}}>
-                      <span>50%</span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
- 
-
-        <section className="ftco-section ftco-project" id="projects-section">
-          <div className="container">
-            <div className="row justify-content-center pb-5">
-              <div className="col-md-12 heading-section text-center ftco-animate">
-                <h1 className="big big-2">Projects</h1>
-                <h2 className="mb-4">My Projects</h2>
-                <p>Please, check my recent projects out here.</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-4">
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-3.png)'}}>
-                  <div className="overlay"></div>
-                  <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://chatbot.tharapa.ai" rel="noopener noreferrer">Building chatbot just one click.</a></h3>
-                    <span>Tharapa Chatbot</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-8">
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-1.png)'}}>
-                  <div className="overlay"></div>
-                  <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://chatbot.tharapa.ai/" rel="noopener noreferrer">Chatbot analytic dashboard.</a></h3>
-                    <span>Tharapa Chatbot</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-8">
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center"  style={{'backgroundImage': 'url(/images/chatbot-2.png)'}}>
-                  <div className="overlay"></div>
-                  <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://chatbot.tharapa.ai/" rel="noopener noreferrer">Building chatbot menu.</a></h3>
-                    <span>Tharapa Chatbot</span>
-                  </div>
-                </div>
-
-                <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/portal-1.png)'}}>
-                  <div className="overlay"></div>
-                  <div className="text text-center p-4">
-                    <h3><a target="_blank" href="https://portal.tharapa.ai/" rel="noopener noreferrer">Stock Control.</a></h3>
-                    <span>Tharapa Portal</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4">
+        <header id="header" className="header">
+            <div className="container">
                 <div className="row">
-                  <div className="col-md-12">
-                    <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(/images/chatbot-4.png)'}}>
-                      <div className="overlay"></div>
-                      <div className="text text-center p-4">
-                        <h3><a target="_blank" href="https://chatbot.tharapa.ai/" rel="noopener noreferrer">Create chatbot flow.</a></h3>
-                        <span>Tharapa Chatbot</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-12">
-                    <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{'backgroundImage': 'url(images/portal-2.png)'}}>
-                      <div className="overlay"></div>
-                      <div className="text text-center p-4">
-                        <h3><a target="_blank" href="https://portal.tharapa.ai/" rel="noopener noreferrer">Sale order management.</a></h3>
-                        <span>Tharapa Portal</span>
-                      </div>
-                    </div>
-                  </div>
+                    <div className="col-lg-6">
+                        <div className="text-container">
+                            <h1 className="h1-large">I am Yin Yin Kyi. I am a software developer base in Myanmar.</h1>
+                            <a className="btn-solid-lg" href="/static/file/YINYINKYICV.pdf" download>Download CV</a>
+                            <a className="btn-outline-lg page-scroll" href="#contact"><i className="fas fa-user"></i>Contact Me</a>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </header> 
+     
+        <div id="about" className="basic-1 bg-gray">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="text-container first">
+                            <h2>Hi there I'm Yin,</h2>
+                            <p>And I love experimenting with code. Having 9 years of professional experience in the IT industry. I am decisive, goal-oriented, self-motivated, willing to work hard, and a fast learner.</p>
+                        </div> 
+                    </div> 
+                    <div className="col-lg-4">
+                        <div className="text-container second">
+                            <div className="time">2018 - PRESENT</div>
+                            <h6>Senior Developer</h6>
+                            <a className={`time no-line ${classes.grey}`} href="https://baganit.com/" target={'blank'}>BAGAN INNOVATION TECHNOLOGY CO.,LTD</a>
+                            <div className="time">2015 - 2018</div>
+                            <h6>Software Developer</h6>
+                            <a className={`time no-line ${classes.grey}`} href="#">SOLIDCAD TECHNOLOGY PTE (SINGAPORE BASE)</a>
+                        </div>
+                    </div> 
+                    <div className="col-lg-4">
+                        <div className="text-container third">
+                            <div className="time">2013 - 2015</div>
+                            <h6>Senior Developer</h6>
+                            <a className={`time no-line ${classes.grey}`} href="https://www.mtg.com.mm/" target={'blank'} >MYANMAR TECHNOLOGY GATEWAY CO.,LTD</a>
+                            <div className="time">2011 - 2013</div>
+                            <h6>Junior Developer</h6>
+                            <a className={`time no-line ${classes.grey}`} href="https://trustlink.io/" target={'blank'}>TRUSTLINK CO.,LTD</a>
+                        </div>
+                    </div> 
                 </div>
-              </div>
-              <div className="col-md-12">
-                <div  className="project img ftco-animate d-flex justify-center-center align-items-center" style={{'backgroundImage': 'url(/images/tharapa-mart-1.png)'}}>
-                  <div className="overlay"></div>
-                  <div className="text text-center p-4 m-auto">
-                    <h3><a target="_blank" href="https://tharapamart.com/" rel="noopener noreferrer">Shopping with us.</a></h3>
-                    <span>Tharapa Mart</span>
-                  </div>
+            </div> 
+        </div> 
+      
+        <div id="services" className="basic-2">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h2 className="h2-heading">Carriers</h2>
+                        <p className="p-heading">I am used to both front-end and back-end development. I also used to working with window development with C#.Net for 5 years.</p>
+                    </div> 
+                </div> 
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="text-box text-center">
+                            <i className="far fa-gem"></i>
+                            <h4>BackEnd Dev</h4>
+                          
+                        </div> 
+                    </div> 
+                    <div className="col-lg-4">
+                        <div className="text-box text-center">
+                            <i className="fas fa-code"></i>
+                            <h4>FrontEnd Dev</h4>
+                          
+                        </div> 
+                    </div> 
+                    <div className="col-lg-4">
+                        <div className="text-box text-center">
+                            <i className="fas fa-tv"></i>
+                            <h4>Window Dev</h4>
+                          
+                        </div> 
+                    </div> 
                 </div>
-              </div>
-             
-            </div>
-          </div>
-        </section>
-        <section className="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-          <div className="container">
-            <div className="row d-md-flex align-items-center">
-              <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                <div className="block-18">
-                  <div className="text">
-                    <strong className="number" data-number="6">0</strong>
-                    <span>PHP/Laravel Projects</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                <div className="block-18">
-                  <div className="text">
-                    <strong className="number" data-number="3">0</strong>
-                    <span>Vuejs Projects</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                <div className="block-18">
-                  <div className="text">
-                    <strong className="number" data-number="2">0</strong>
-                    <span>Reactjs Projects</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                <div className="block-18">
-                  <div className="text">
-                    <strong className="number" data-number="1">0</strong>
-                    <span>Nodejs Projects</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                <div className="block-18">
-                  <div className="text">
-                    <strong className="number" data-number="6">0</strong>
-                    <span>C#.Net/VB.Net Projects</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+            </div> 
+        </div> 
+        
+      <div className="split">
+        <div className="area-1">
+        </div>
+              <div className="area-2 bg-gray">
+                <div className="container">    
+                    <div className="row">
+                        <div className="col-lg-12">     
+                        
+                            <div className="text-container">
+                                <h2>Why Work With Me</h2>
+                                <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well</p>
+                                <h5>DEVELOPMENT SKILLS</h5>
+                                <p className='mb-3'>I am familiar and work on a daily basis with PHP, Laravel Framework, Vuejs, Nodejs and other modern frameworks. Also learning and freelance developed with Reactjs.</p>
+                                <div className="icons-container mt-0">
 
-        <section className="ftco-section ftco-hireme img margin-top" style={{'backgroundImage': 'url(/images/hire-me-2.jpg)'}}>
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-md-7 ftco-animate text-center">
-                <h2>I&apos;m <span>open</span> to work</h2>                
-                <p className="mb-0">
-                  <a href="/static/file/YIN-YIN-KYI-CV.pdf" download className="btn btn-primary py-3 px-5">Hire me</a>                  
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
 
-        <section className="ftco-section contact-section ftco-no-pb" id="contact-section">
-          <div className="container">
-            <div className="row justify-content-center mb-5 pb-3">
-              <div className="col-md-8 heading-section text-center ftco-animate">
-                <h1 className="big big-2">Contact</h1>
-                <h2 className="mb-4">Contact Me</h2>
-                <p>If you think I am a right person for your team, please do not hesitate to contact me...</p>
-              </div>
-            </div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" />
 
-            <div className="row d-flex contact-info mb-5">
-              <div className="col-md-12 col-lg-4 d-flex ftco-animate">
-                <div className="align-self-stretch box p-4 text-center">
-                  <div className="icon d-flex align-items-center justify-content-center">
-                    <span className="icon-map-signs"></span>
-                  </div>
-                  <h3 className="mb-4">Address</h3>
-                  <p>No(10/11), 13 Revenue, Hlaing Township, Insein Road, Yangon.</p>
-                </div>
-              </div>
-              <div className="col-md-12 col-lg-4 d-flex ftco-animate">
-                <div className="align-self-stretch box p-4 text-center">
-                  <div className="icon d-flex align-items-center justify-content-center">
-                    <span className="icon-phone2"></span>
-                  </div>
-                  <h3 className="mb-4">Contact Number</h3>
-                  <p><a href="tel:+959979962810">+ 959979962810</a></p>
-                </div>
-              </div>
-              <div className="col-md-12 col-lg-4 d-flex ftco-animate">
-                <div className="align-self-stretch box p-4 text-center">
-                  <div className="icon d-flex align-items-center justify-content-center">
-                    <span className="icon-paper-plane"></span>
-                  </div>
-                  <h3 className="mb-4">Email Address</h3>
-                  <p><a href="mailto:info@yoursite.com">yinyinkyi90@gmail.com</a></p>
-                </div>
-              </div>
-            </div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-plain-wordmark.svg" />
 
-            <div className="row no-gutters block-9">
-              <div className="col-md-6 order-md-last d-flex">
-                <form action="#" className="bg-light p-4 p-md-5 contact-form">
-                  <div className={`form-group  ${validityState.name?'':classes.invalid}`}>                      
-                        <input type="text" className="form-control" placeholder="Your Name" value={name} onChange={(e)=>setName(e.target.value)}/>
-                        {!validityState.name && <p>please fill name!</p>}                      
-                  </div>
-                  <div className={`form-group  ${validityState.email?'':classes.invalid}`}>
-                    <input type="text" className="form-control" placeholder="Your Email (example@gmail.com)" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-                    {!validityState.email && <p>please fill email with correct form!</p>}  
-                  </div>
-                  <div className={`form-group  ${validityState.subject?'':classes.invalid}`}>
-                    <input type="text" className="form-control" placeholder="Subject" value={subject} onChange={(e)=>setSubject(e.target.value)}/>
-                    {!validityState.subject && <p>please fill subject!</p>}  
-                  </div>
-                  <div className={`form-group  ${validityState.message?'':classes.invalid}`}>
-                    <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message" value={bodyMessage} onChange={(e)=>setBodyMessage(e.target.value)}></textarea>
-                    {!validityState.message && <p>please fill message!</p>}  
-                  </div>
-                  <div className="form-group">
-                    <button type="submit" onClick={sendEmail} className="btn btn-primary py-3 px-5">
-                      {loading?<FontAwesomeIcon icon={faSpinner} spin />:''}
-                      Send Message
-                    </button>
-                  </div>
-                </form>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
           
-              </div>
+                                <img src="images/details-icon-javascript.png" alt="alternative"/>
+                                </div> 
+                                <h5>Other SKILLS</h5>
+                                <p className='mb-3'>I have also experience in MongoDB, MYSQL, MSSQL, Git control and Linux.</p>
+                                <div className="icons-container mt-0">
 
-              <div className="col-md-6 d-flex">
-                <div className="img" style={{'backgroundImage': 'url(images/my_about.jpg)'}}></div>
-              </div>
-            </div>
-          </div>
-        </section>
-		
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
 
-        <footer className="ftco-footer ftco-section">
-          <div className="container">            
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <ul className="ftco-footer-social list-unstyled">
-                  <li className="ftco-animate"><a href="https://www.facebook.com/yinyin.yinkyi/" target={'blank'}><span className="icon-facebook"></span></a></li>
-                  <li className="ftco-animate"><a href="https://www.linkedin.com/in/yin-yin-kyi-1a631274/" target={'blank'}><span className="icon-linkedin"></span></a></li>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
+
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+          
+                                </div> 
+                            
+                                
+                            </div> 
+                          
+
+                        </div> 
+                    </div>
+                </div> 
+        </div> 
+        </div> 
+      
+        <div id="projects" className="basic-3">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h2 className="h2-heading">My projects</h2>
+                        <p className="p-heading">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops</p>
+                    </div> 
+                </div> 
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://tharapamart.com/" target={'blank'}>
+                                    <img className="img-fluid" src="images/my-project-1.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>Project:</strong> Tharapa Mart, Developed for ecommerence platform.  <a className="blue" href="project">details</a></p>
+                        </div>
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://chatbot.tharapa.ai/automation">
+                                    <img className="img-fluid" src="images/my-project-2.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>Project:</strong> Chatbot,  content management system for chatbot building. <a className="blue" href="project">details</a></p>
+                        </div> 
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://livechat.tharapa.ai/">
+                                    <img className="img-fluid" src="images/my-project-4.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>Project:</strong> Thrapa Chat, Create live chat environment for virtual facebook messenger and viber to communicate with their customers. <a className="blue" href="project">details</a></p>
+                        </div> 
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://portal.tharapa.ai/sales-dashboard">
+                                    <img className="img-fluid" src="images/my-project-3.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>Project:</strong> Tharapa Portal,  Stock management system , sale order processing and customer information. <a className="blue" href="project">details</a></p>
+                        </div> 
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://portal.tharapa.ai/sales-dashboard">
+                                    <img className="img-fluid" src="images/my-project-5.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>Project:</strong> BI Miner,  Facebook Page analytic management system. <a className="blue" href="project">details</a></p>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+       
+        <div className="basic-4">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="project">
+                                    <img className="img-fluid" src="images/my-work-1.png" alt="alternative"/>
+                                </a>
+                            </div>
+                            <p><strong>For:</strong> BIT, <strong>Project:</strong> Bagan Innovation Technology's tharapa product landing page website. <a className="blue" href="project">details</a></p>
+                        </div> 
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="project">
+                                    <img className="img-fluid" src="images/my-work-2.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>For:</strong> Tharapa Chat, <strong>Project:</strong> Sample messenger bot UI. <a className="blue" href="project">details</a></p>
+                        </div> 
+                    </div> 
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="http://www.cyberkingict.com/">
+                                    <img className="img-fluid" src="images/my-work-3.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>For:</strong> Cyber King Co.,Ltd., <strong>Project:</strong> Web design for Cyber King Co.,Ltd.  <a className="blue" href="project">details</a></p>
+                        </div> 
+                    </div>
+                </div> 
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://www.readsnote.com/">
+                                    <img className="img-fluid" src="images/my-work-4.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>For:</strong> Own product, <strong>Project:</strong> Books Portal System. <a className="blue" href="project">details</a></p>
+                        </div> 
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="project">
+                                    <img className="img-fluid" src="images/my-work-5.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="project">details</a></p>
+                        </div> 
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="project">
+                                    <img className="img-fluid" src="images/my-work-6.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="project">details</a></p>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        
+        <div className="cards-1">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h2 className="h2-heading">A few words from people that chose to work with me</h2>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-12">
                     
-                </ul>                
-              </div>
-            </div>
+                        <div className="card">
+                            <div className="card-body">
+                                <p className="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                                <div className="details">
+                                    <img src="images/testimonial-1.jpg" alt="alternative"/>
+                                    <div className="text">
+                                        <div className="testimonial-author">Samantha Bloom</div>
+                                        <div className="occupation">Team Leader - Syncnow</div>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                     
+                        <div className="card">
+                            <div className="card-body">
+                                <p className="testimonial-text">“Loved to work with Mark he's such an awesome developer with great attention to details. He also has a great eye for design”</p>
+                                <div className="details">
+                                    <img src="images/testimonial-2.jpg" alt="alternative"/>
+                                    <div className="text">
+                                        <div className="testimonial-author">John Rowling</div>
+                                        <div className="occupation">Marketing Manager - Nexlite</div>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                    
+                        <div className="card">
+                            <div className="card-body">
+                                <p className="testimonial-text">“So glad we started working with Mark. We've used many times his design and development skills for our inhouse online projects”</p>
+                                <div className="details">
+                                    <img src="images/testimonial-3.jpg" alt="alternative"/>
+                                    <div className="text">
+                                        <div className="testimonial-author">Lana Smith</div>
+                                        <div className="occupation">General Manager - Shifter</div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+
+        <div className="container">
             <div className="row">
-              <div className="col-md-12 text-center">                
-                <p>
-                Copyright &copy; 2022 All rights reserved | This template is made with <i className="icon-heart color-danger" aria-hidden="true"></i> by <a href="#" target="_blank">YYK</a>
-              </p>
-              </div>
-            </div>
-          </div>
-        </footer>
-    
-      <div id="ftco-loader" className="show fullscreen">
-        <svg className="circular" width="48px" height="48px">
-          <circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth="4" stroke="#eeeeee"/>
-          <circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#F96D00"/>
-          </svg>
-      </div>
+                <div className="col-lg-12">
+                    <hr className="section-divider"/>
+                </div>
+            </div> 
+        </div>
+        
+        {/* <div className="accordion-1">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h2 className="h2-heading">Frequent questions</h2>
+                    </div> 
+                </div> 
+                <div className="row">
+                    <div className="col-lg-12">
+
+                        <div className="accordion" id="accordionExample">
+                            <div className="card">
+                                <div className="card-header" id="headingOne">
+                                    <button className="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How can I contact you and quickly get a quote for my online project?
+                                    </button>
+                                </div>
+                                <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div className="card-body">
+                                        The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-header" id="headingTwo">
+                                    <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Do you create designs from the ground up or you are using themes?
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div className="card-body">
+                                        The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-header" id="headingThree">
+                                    <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Will I receive any included maintenance or warranty after project delivery?
+                                    </button>
+                                </div>
+                                <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div className="card-body">
+                                        The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-header" id="headingFour">
+                                    <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        If something goes wrong with the project can I have my money back?
+                                    </button>
+                                </div>
+                                <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div className="card-body">
+                                        The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-header" id="headingFive">
+                                    <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        What's your preferred method of payment and do you need an advance?
+                                    </button>
+                                </div>
+                                <div id="collapseFive" className="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                    <div className="card-body">
+                                        The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                    </div> 
+                </div> 
+            </div> 
+        </div>  */}
+     
+        <div id="contact" className="form-1 bg-gray">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h2>Contact details</h2>
+                        <p className="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a className="blue no-line" href="#your-link">yinyinkyi90@gmail.com</a></p>
+                    </div> 
+                </div> 
+                <div className="row">
+                    <div className="col-lg-12">
+                        <form id="contactForm">
+                            <div className={`form-group  ${validityState.name?'':classes.invalid}`}>
+                                <input type="text" className="form-control-input" id="cname" value={name} onChange={(e)=>setName(e.target.value)} required/>
+                                <label className="label-control" htmlFor="cname">Name</label>
+                            </div>
+                            <div className={`form-group  ${validityState.email?'':classes.invalid}`}>
+                                <input type="email" className="form-control-input" id="cemail" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
+                                <label className="label-control" htmlFor="cemail">Email</label>
+                            </div>
+                            <div className={`form-group  ${validityState.subject?'':classes.invalid}`}>
+                                <input type="text" className="form-control-input" id="csubject" value={subject} onChange={(e)=>setSubject(e.target.value)} required/>
+                                <label className="label-control" htmlFor="csubject">subject</label>
+                            </div>
+                            <div className={`form-group  ${validityState.message?'':classes.invalid}`}>
+                                <textarea className="form-control-textarea" id="cmessage" value={bodyMessage} onChange={(e)=>setBodyMessage(e.target.value)} required></textarea>
+                                <label className="label-control" htmlFor="cmessage">Message</label>
+                            </div>
+                            <div className="form-group">
+                                <button type="submit" onClick={sendEmail} className="form-control-submit-button">
+                                    {loading?<FontAwesomeIcon icon={faSpinner} spin />:''}
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                       
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+
+        
     </Fragment>
   )
 }

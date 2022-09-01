@@ -13,7 +13,23 @@
     /*You can increase or decrease the timer (5s) to 
      increase or decrease the speed of the spinner*/
   }
-
+  .navbarbrand {
+    color: #fff;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: inherit;
+    white-space: nowrap;
+    margin-right:1rem;
+    text-decoration: none;
+    background-color: transparent;
+ }
+ .grey{
+  color:#4d5055 !important
+ }
 @keyframes spin {
   from {
     transform: rotate(0deg);
