@@ -1,5 +1,5 @@
 import { Fragment} from 'react'
-
+import Link from 'next/link'
 export default function Project() {  
     return (
         <Fragment>
