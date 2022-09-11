@@ -160,7 +160,7 @@ export default function Home() {
                         
                             <div className="text-container">
                                 <h2>Why Work With Me</h2>
-                                <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well</p>
+                                <p>I am passionate and love coding. I am also a flexible person in both communication and learning new technologies .</p>
                                 <h5>DEVELOPMENT SKILLS</h5>
                                 <p className='mb-3'>I am familiar and work on a daily basis with PHP, Laravel Framework, Vuejs, Nodejs and other modern frameworks. Also learning and freelance developed with Reactjs.</p>
                                 <div className="icons-container mt-0">
@@ -208,7 +208,7 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-12">
                         <h2 className="h2-heading">My projects</h2>
-                        <p className="p-heading">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops</p>
+                        <p className="p-heading">Listed below are some of the most representative projects I've worked on.</p>
                     </div> 
                 </div> 
                 <div className="row">
@@ -219,7 +219,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-1.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Tharapa Mart, Developed for ecommerence platform.  <a className="blue" href="project">details</a></p>
+                            <p><strong>Project:</strong> Tharapa Mart, Developed for ecommerence platform.  <a className="blue" href="https://tharapamart.com/">details</a></p>
                         </div>
                         <div className="text-container">
                             <div className="image-container">
@@ -227,7 +227,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-2.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Chatbot,  content management system for chatbot building. <a className="blue" href="project">details</a></p>
+                            <p><strong>Project:</strong> Chatbot,  content management system for chatbot building. <a className="blue" href="https://chatbot.tharapa.ai/automation">details</a></p>
                         </div> 
                         <div className="text-container">
                             <div className="image-container">
@@ -235,7 +235,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-4.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Thrapa Chat, Create live chat environment for virtual facebook messenger and viber to communicate with their customers. <a className="blue" href="project">details</a></p>
+                            <p><strong>Project:</strong> Thrapa Chat, Create live chat environment for virtual facebook messenger and viber to communicate with their customers. <a className="blue" href="https://livechat.tharapa.ai/">details</a></p>
                         </div> 
                         <div className="text-container">
                             <div className="image-container">
@@ -243,15 +243,15 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-3.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Tharapa Portal,  Stock management system , sale order processing and customer information. <a className="blue" href="project">details</a></p>
+                            <p><strong>Project:</strong> Tharapa Portal,  Stock management system , sale order processing and customer information. <a className="blue" href="https://portal.tharapa.ai/sales-dashboard">details</a></p>
                         </div> 
                         <div className="text-container">
                             <div className="image-container">
-                                <a href="https://portal.tharapa.ai/sales-dashboard">
+                                <a href="https://my.baganintel.ai/">
                                     <img className="img-fluid" src="images/my-project-5.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> BI Miner,  Facebook Page analytic management system. <a className="blue" href="project">details</a></p>
+                            <p><strong>Project:</strong> BI Miner,  Facebook Page analytic management system. <a className="blue" href="https://my.baganintel.ai/">details</a></p>
                         </div> 
                     </div> 
                 </div> 
@@ -264,21 +264,20 @@ export default function Home() {
                     <div className="col-lg-4">
                         <div className="text-container">
                             <div className="image-container">
-                                <a href="project">
+                                <a href="https://tharapa.ai/">
                                     <img className="img-fluid" src="images/my-work-1.png" alt="alternative"/>
                                 </a>
                             </div>
-                            <p><strong>For:</strong> BIT, <strong>Project:</strong> Bagan Innovation Technology's tharapa product landing page website. <a className="blue" href="project">details</a></p>
+                            <p><strong>For:</strong> BIT, <strong>Project:</strong> Bagan Innovation Technology's tharapa product landing page website. <a className="blue" href="https://tharapa.ai/">details</a></p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
                         <div className="text-container">
                             <div className="image-container">
-                                <a href="project">
+                               
                                     <img className="img-fluid" src="images/my-work-2.png" alt="alternative"/>
-                                </a>
                             </div> 
-                            <p><strong>For:</strong> Tharapa Chat, <strong>Project:</strong> Sample messenger bot UI. <a className="blue" href="project">details</a></p>
+                            <p><strong>For:</strong> Tharapa Chat, <strong>Project:</strong> Sample messenger bot UI.</p>
                         </div> 
                     </div> 
                     <div className="col-lg-4">
@@ -288,7 +287,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-work-3.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>For:</strong> Cyber King Co.,Ltd., <strong>Project:</strong> Web design for Cyber King Co.,Ltd.  <a className="blue" href="project">details</a></p>
+                            <p><strong>For:</strong> Cyber King Co.,Ltd., <strong>Project:</strong> Web design for Cyber King Co.,Ltd.  <a className="blue" href="http://www.cyberkingict.com/">details</a></p>
                         </div> 
                     </div>
                 </div> 
@@ -300,34 +299,34 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-work-4.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>For:</strong> Own product, <strong>Project:</strong> Books Portal System. <a className="blue" href="project">details</a></p>
+                            <p><strong>For:</strong> Creation product, <strong>Project:</strong> Books Portal System. <a className="blue" href="https://www.readsnote.com/">details</a></p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
                         <div className="text-container">
                             <div className="image-container">
-                                <a href="project">
+                                <a href="https://my.baganintel.ai/">
                                     <img className="img-fluid" src="images/my-work-5.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="project">details</a></p>
+                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="https://my.baganintel.ai/">details</a></p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
                         <div className="text-container">
                             <div className="image-container">
-                                <a href="project">
+                                <a href="https://my.baganintel.ai/">
                                     <img className="img-fluid" src="images/my-work-6.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="project">details</a></p>
+                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="https://my.baganintel.ai/">details</a></p>
                         </div> 
                     </div> 
                 </div> 
             </div> 
         </div> 
         
-        <div className="cards-1">
+        {/* <div className="cards-1">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -380,7 +379,7 @@ export default function Home() {
                     </div>
                 </div> 
             </div> 
-        </div> 
+        </div>  */}
 
         <div className="container">
             <div className="row">
