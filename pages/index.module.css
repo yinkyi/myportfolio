@@ -7,6 +7,10 @@
     border-color: #aa0b20;
     background-color: #ffeff1;
   }
+  .invalid textarea {
+    border-color: #aa0b20;
+    background-color: #ffeff1;
+  }
   .spinner {
     animation: spin infinite 5s linear;
 
