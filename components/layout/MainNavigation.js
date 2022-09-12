@@ -22,7 +22,7 @@ function MainNavigation() {
                         <Link className="page-scroll" href="/#about"><a className="nav-link">About</a></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="page-scroll" href="/#services"><a className="nav-link">Carriers</a></Link>
+                        <Link className="page-scroll" href="/#services"><a className="nav-link">Careers</a></Link>
                     </li>
                     {/* <li className="nav-item dropdown">
                         <Link  href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -120,7 +120,7 @@ export default function Home() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <h2 className="h2-heading">Carriers</h2>
+                        <h2 className="h2-heading">Careers</h2>
                         <p className="p-heading">I am used to both front-end and back-end development. I also used to working with window development with C#.Net for 5 years.</p>
                     </div> 
                 </div> 
