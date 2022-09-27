@@ -252,6 +252,14 @@ export default function Home() {
                                 </a>
                             </div> 
                             <p><strong>Project:</strong> BI Miner,  Facebook Page analytic management system. <a className="blue" href="https://my.baganintel.ai/">details</a></p>
+                        </div>
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="http://klink.my-cmss.com/">
+                                    <img className="img-fluid" src="images/my-project-6.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p><strong>Project:</strong> Reactjs,  Point Of Sale with Reactjs. <a className="blue" href="http://klink.my-cmss.com/">details</a></p>
                         </div> 
                     </div> 
                 </div> 
