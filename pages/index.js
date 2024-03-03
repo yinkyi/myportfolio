@@ -162,7 +162,7 @@ export default function Home() {
                                 <h2>Why Work With Me</h2>
                                 <p>I am passionate and love coding. I am also a flexible person in both communication and learning new technologies .</p>
                                 <h5>DEVELOPMENT SKILLS</h5>
-                                <p className='mb-3'>I am familiar and work on a daily basis with PHP, Laravel Framework, Vuejs, Nodejs and other modern frameworks. Also learning and freelance developed with Reactjs.</p>
+                                <p className='mb-3'>I am familiar and work on a daily basis with PHP, Laravel Framework, Vuejs, Reactjs, Nestjs, Nodejs, and other modern frameworks.</p>
                                 <div className="icons-container mt-0">
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
