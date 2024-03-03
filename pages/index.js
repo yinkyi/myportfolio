@@ -94,22 +94,24 @@ export default function Home() {
                     </div> 
                     <div className="col-lg-4">
                         <div className="text-container second">
-                            <div className="time">2018 - PRESENT</div>
+                            <div className="time">2022 - Present</div>
+                            <h6>Senior Full-Stack Developer</h6>
+                            <a className={`time no-line ${classes.grey}`} href="https://www.ringzerogames.com/" target={'blank'}>RingZero IT Service Co.,Ltd.(Bangkok)</a>
+                            <div className="time">2018 - 2022</div>
                             <h6>Senior Developer</h6>
                             <a className={`time no-line ${classes.grey}`} href="https://baganit.com/" target={'blank'}>BAGAN INNOVATION TECHNOLOGY CO.,LTD</a>
-                            <div className="time">2015 - 2018</div>
-                            <h6>Software Developer</h6>
-                            <a className={`time no-line ${classes.grey}`} href="#">SOLIDCAD TECHNOLOGY PTE (SINGAPORE BASE)</a>
                         </div>
                     </div> 
                     <div className="col-lg-4">
                         <div className="text-container third">
+                            <div className="time">2015 - 2018</div>
+                            <h6>Software Developer</h6>
+                            <a className={`time no-line ${classes.grey}`} href="#">SOLIDCAD TECHNOLOGY PTE (SINGAPORE BASE)</a>
+
                             <div className="time">2013 - 2015</div>
                             <h6>Senior Developer</h6>
                             <a className={`time no-line ${classes.grey}`} href="https://www.mtg.com.mm/" target={'blank'} >MYANMAR TECHNOLOGY GATEWAY CO.,LTD</a>
-                            <div className="time">2011 - 2013</div>
-                            <h6>Junior Developer</h6>
-                            <a className={`time no-line ${classes.grey}`} href="https://trustlink.io/" target={'blank'}>TRUSTLINK CO.,LTD</a>
+                          
                         </div>
                     </div> 
                 </div>
@@ -167,13 +169,14 @@ export default function Home() {
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
 
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" />
+                                <img src="images/laravel.svg" />
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-plain-wordmark.svg" />
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
 
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
+                                <img src="images/nestjs.svg" />
           
                                 <img src="images/details-icon-javascript.png" alt="alternative"/>
                                 </div> 
