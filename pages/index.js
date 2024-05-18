@@ -74,7 +74,7 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="text-container">
-                            <h1 className="h1-large">I am Yin Yin Kyi. I am a software developer base in Myanmar.</h1>
+                            <h1 className="h1-large">I am Yin Yin Kyi.<br/> I am a software developer.</h1>
                             <a className="btn-solid-lg" href="/static/file/YINYINKYICV.pdf" download>Download CV</a>
                             <a className="btn-outline-lg page-scroll" href="#contact"><i className="fas fa-user"></i>Contact Me</a>
                         </div> 
@@ -106,7 +106,7 @@ export default function Home() {
                         <div className="text-container third">
                             <div className="time">2015 - 2018</div>
                             <h6>Software Developer</h6>
-                            <a className={`time no-line ${classes.grey}`} href="#">SOLIDCAD TECHNOLOGY PTE (SINGAPORE BASE)</a>
+                            <a className={`time no-line ${classes.grey}`} href="#">SOLIDCAD TECHNOLOGY PTE (SINGAPORE BASED)</a>
 
                             <div className="time">2013 - 2015</div>
                             <h6>Senior Developer</h6>
@@ -258,16 +258,84 @@ export default function Home() {
                         </div>
                         <div className="text-container">
                             <div className="image-container">
-                                <a href="http://klink.my-cmss.com/">
-                                    <img className="img-fluid" src="images/my-project-6.png" alt="alternative"/>
+                                <a href="http://18.143.244.78/">
+                                    <img className="img-fluid" src="images/pos_admin/1.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Reactjs,  Point Of Sale with Reactjs. <a className="blue" href="http://klink.my-cmss.com/">details</a></p>
+                            <p><strong>Project:</strong> POS BackOffice Platform. <a className="blue" href="http://18.143.244.78/">details</a></p>
                         </div> 
                     </div> 
                 </div> 
             </div> 
-        </div> 
+        </div>
+
+         <div className="basic-4">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://tharapa.ai/">
+                                    <img className="img-fluid" src="images/pos_terminal/1.png" alt="alternative"/>
+                                </a>
+                            </div>
+                            <p><strong>For:</strong> RingZero, <strong>Project:</strong> POS Terminal.</p>
+                        </div> 
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                               
+                                    <img className="img-fluid" src="images/pos_terminal/2.png" alt="alternative"/>
+                            </div> 
+                            <p> Sale Transaction.</p>
+                        </div> 
+                    </div> 
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="http://www.cyberkingict.com/">
+                                    <img className="img-fluid" src="images/pos_terminal/3.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p> Sale Refund or Void</p>
+                        </div> 
+                    </div>
+                </div> 
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://www.readsnote.com/">
+                                    <img className="img-fluid" src="images/pos_terminal/4.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p> Sale Refund or Void</p>
+                        </div> 
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://my.baganintel.ai/">
+                                    <img className="img-fluid" src="images/pos_terminal/6.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p> Stock Adjustment</p>
+                        </div> 
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="text-container">
+                            <div className="image-container">
+                                <a href="https://my.baganintel.ai/">
+                                    <img className="img-fluid" src="images/pos_terminal/7.png" alt="alternative"/>
+                                </a>
+                            </div> 
+                            <p> Setting</p>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>  
        
         <div className="basic-4">
             <div className="container">
@@ -337,7 +405,7 @@ export default function Home() {
             </div> 
         </div> 
         
-        {/* <div className="cards-1">
+         <div className="cards-1">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -347,14 +415,59 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-12">
                     
+                    <div className="card">
+                            <div className="card-body">
+                                <p className="testimonial-text">“She is a kind person who always helps and shares new knowledges with her team members”</p>
+                                <div className="details">
+                                    <img src="images/testimonial-3.jpg" alt="alternative"/>
+                                    <div className="text">
+                                        <div className="testimonial-author">Adithep Sudcharee</div>
+                                        <div className="occupation">Front-end Developer - RingZero</div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                     
+                        <div className="card">
+                            <div className="card-body">
+                                <p className="testimonial-text">Yin Yin Kyi is a smart and hardworking individual. As a senior full stack developer, she consistently delivers excellent work. Her technical skills are top-notch, and she is always willing to help her teammates. Yin Yin tackles challenges with ease and brings innovative solutions to the table. Her dedication and professionalism make her a valuable asset to any team. I am continually impressed by her contributions and positive attitude.
+”</p>
+                                <div className="details">
+                                    <img src="images/testimonial-4.jpeg" alt="alternative"/>
+                                    <div className="text">
+                                        <div className="testimonial-author">Myo Thu</div>
+                                        <div className="occupation">Senior Software Engineer - Ooredoo Myanmar</div>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                    
+                        <div className="card">
+                            <div className="card-body">
+                                <p className="testimonial-text">Working with Yin Yin Kyi has been a fantastic experience. As an Android developer, I appreciate her expertise in full-stack development. Her ability to seamlessly integrate mobile apps and back-end systems has greatly enhanced our projects. She is skilled, reliable, and always delivers high-quality work on time.
+”</p>
+                                <div className="details">
+                                    <img src="images/testimonial-6.jpeg" alt="alternative"/>
+                                    <div className="text">
+                                        <div className="testimonial-author">Htoo Aung Kyaw</div>
+                                        <div className="occupation">Android Developer - Codigo Myanmar</div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    {/* <div className="col-lg-12">
+                    
                         <div className="card">
                             <div className="card-body">
                                 <p className="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
                                 <div className="details">
-                                    <img src="images/testimonial-1.jpg" alt="alternative"/>
+                                    <img src="images/testimonial-1.jpeg" alt="alternative"/>
                                     <div className="text">
-                                        <div className="testimonial-author">Samantha Bloom</div>
-                                        <div className="occupation">Team Leader - Syncnow</div>
+                                        <div className="testimonial-author">Pyae Phyo Hein</div>
+                                        <div className="occupation">Project Manager - Bagan Innovation Technology</div>
                                     </div> 
                                 </div> 
                             </div>
@@ -364,33 +477,35 @@ export default function Home() {
                             <div className="card-body">
                                 <p className="testimonial-text">“Loved to work with Mark he's such an awesome developer with great attention to details. He also has a great eye for design”</p>
                                 <div className="details">
-                                    <img src="images/testimonial-2.jpg" alt="alternative"/>
+                                    <img src="images/testimonial-1.jpeg" alt="alternative"/>
                                     <div className="text">
-                                        <div className="testimonial-author">John Rowling</div>
-                                        <div className="occupation">Marketing Manager - Nexlite</div>
+                                        <div className="testimonial-author">Chan Nyein Kyaw</div>
+                                        <div className="occupation">Technical Lead- RingZero</div>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="card-body">
+                                <p className="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                                <div className="details">
+                                    <img src="images/testimonial-5.jpeg" alt="alternative"/>
+                                    <div className="text">
+                                        <div className="testimonial-author">Pyae Phyo Hein</div>
+                                        <div className="occupation">Project Manager - Bagan Innovation Technology</div>
                                     </div> 
                                 </div> 
                             </div>
                         </div>
                     
-                        <div className="card">
-                            <div className="card-body">
-                                <p className="testimonial-text">“So glad we started working with Mark. We've used many times his design and development skills for our inhouse online projects”</p>
-                                <div className="details">
-                                    <img src="images/testimonial-3.jpg" alt="alternative"/>
-                                    <div className="text">
-                                        <div className="testimonial-author">Lana Smith</div>
-                                        <div className="occupation">General Manager - Shifter</div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
+                        
                        
 
-                    </div>
+                    </div> */}
                 </div> 
             </div> 
-        </div>  */}
+        </div> 
 
         <div className="container">
             <div className="row">
@@ -483,9 +598,16 @@ export default function Home() {
                 <div className="row">
                     <div className="col-lg-12">
                         <h2>Contact details</h2>
-                        <p className="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a className="blue no-line" href="#your-link">yinyinkyi90@gmail.com</a></p>
+                        <p className="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following</p>
                     </div> 
+                    <div className="col-lg-12">
+                        <p>email : <a className="blue no-line" href="#your-link">yinyinkyi90@gmail.com</a></p>
+                    </div>
+                    <div className="col-lg-12">
+                        <p>phone : <a className="blue no-line" href="tel:+66955344187">(+66) 0955344187</a></p>
+                    </div>  
                 </div> 
+                
                 <div className="row">
                     <div className="col-lg-12">
                         <form id="contactForm">
