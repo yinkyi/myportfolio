@@ -43,7 +43,7 @@ export default function Home() {
         message:enterMessageValid
     }});
     const formvalidate= enterNameValid && enterEmailValid && enterSubjectValid && enterMessageValid;
-    
+    debugger
     if(!formvalidate){
       return false;
     }

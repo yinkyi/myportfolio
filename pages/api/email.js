@@ -3,7 +3,7 @@ const handler=async (req,res)=>{
     const {name,email,subject,bodyMessage} = req.body;
     const client = new SMTPClient({
         user:'fullstackdev.ygn2024@gmail.com',
-        password:'fmekhcwgmtgczvii',
+        password:'qhyy ijte lemu tyap',//fmekhcwgmtgczvii',
         host:'smtp.gmail.com',
         ssl:true
     })
