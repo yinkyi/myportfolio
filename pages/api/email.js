@@ -2,7 +2,7 @@ import {SMTPClient} from 'emailjs';
 const handler=async (req,res)=>{
     const {name,email,subject,bodyMessage} = req.body;
     const client = new SMTPClient({
-        user:'fullstackdev.ygn2022@gmail.com',
+        user:'fullstackdev.ygn2024@gmail.com',
         password:'fmekhcwgmtgczvii',
         host:'smtp.gmail.com',
         ssl:true
@@ -11,7 +11,7 @@ try{
     const send =  await client.sendAsync({
         text:`${bodyMessage} \n This message is sent by ${name}.`,
         from:email,
-        to:'fullstackdev.ygn2022@gmail.com',
+        to:'yinyinkyi90@gmail.com',
         subject:subject
     })
     }catch(e){
