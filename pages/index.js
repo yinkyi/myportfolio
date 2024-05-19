@@ -227,7 +227,7 @@ export default function Home() {
                                 <strong className="mr-2">Project:</strong>
                                 <code className="ml-2">Tharapa Mart</code> 
                                 <span> Developed for e-commerce platform. </span>
-                                <a href="https://tharapamart.com/" className="blue ml-2">details</a>
+                                <a href="https://tharapamart.com/" className="blue ml-2">link</a>
                             </p>
                         </div>
                         <div className="text-container">
@@ -240,7 +240,7 @@ export default function Home() {
                                 <strong className="mr-2">Project:</strong>
                                 <code className="ml-2">Chatbot</code>
                                 <span> Content management system for chatbot building. </span>
-                                 <a className="blue" href="https://chatbot.tharapa.ai/automation">details</a>
+                                 <a className="blue" href="https://chatbot.tharapa.ai/automation">link</a>
                             </p>
                         </div> 
                         <div className="text-container">
@@ -252,7 +252,7 @@ export default function Home() {
                                 <strong className="mr-2">Project:</strong>
                                 <code className="ml-2">Thrapa Chat</code>
                                 <span> Create live chat environment for virtual facebook messenger and viber to communicate with their customers. </span>
-                                 <a className="blue" href="https://livechat.tharapa.ai/">details</a>
+                                 <a className="blue" href="https://livechat.tharapa.ai/">link</a>
                            
                         </div> 
                         <div className="text-container">
@@ -265,7 +265,7 @@ export default function Home() {
                                 <strong className="mr-2">Project:</strong>
                                 <code className='mr-2'>Tharapa Portal</code>
                                 <span> Stock management system , sale order processing and customer information.</span>   
-                                <a className="blue" href="https://portal.tharapa.ai/sales-dashboard">links</a></p>
+                                <a className="blue" href="https://portal.tharapa.ai/sales-dashboard">link</a></p>
                         </div> 
                         <div className="text-container">
                             <div className="image-container">
@@ -277,7 +277,7 @@ export default function Home() {
                                 <strong className='mr-2'>Project:</strong> 
                                 <code className='mr-2'>BI Miner</code>
                                 <span>Facebook Page analytic management system.</span>  
-                                <a className="blue" href="https://my.baganintel.ai/">links</a></p>
+                                <a className="blue" href="https://my.baganintel.ai/">link</a></p>
                         </div>
                         <div className="text-container">
                             <div className="image-container">
@@ -288,7 +288,7 @@ export default function Home() {
                             <p>
                                 <strong className='mr-2'>Project:</strong> 
                                 <code className='mr-2'>POS BackOffice Platform</code>
-                                <a className="blue" href="http://18.143.244.78/">links</a></p>
+                                <a className="blue" href="http://18.143.244.78/">link</a></p>
                         </div> 
                     </div> 
                 </div> 
@@ -383,7 +383,7 @@ export default function Home() {
                                 <code className='mr-2'>BIT</code>
                                 <strong className='mr-2'>Project:</strong> 
                                 <span className='mr-2'>Bagan Innovation Technology's tharapa product landing page website. </span>
-                                <a className="blue" href="https://tharapa.ai/">details</a>
+                                <a className="blue" href="https://tharapa.ai/">link</a>
                             </p>
                         </div> 
                     </div>
@@ -413,7 +413,7 @@ export default function Home() {
                                 <code className='mr-2'>Cyber King</code>
                                 <strong className='mr-2'>Project:</strong> 
                                 <code className='mr-2'>Website</code>
-                                <a className="blue" href="http://www.cyberkingict.com/">details</a>
+                                <a className="blue" href="http://www.cyberkingict.com/">link</a>
                             </p>
                            
                         </div> 
@@ -432,7 +432,7 @@ export default function Home() {
                                 <code className='mr-2'>BTI</code>
                                 <strong className='mr-2'>Project:</strong> 
                                 <code className='mr-2'>BI Miner</code>
-                                <a className="blue" href="https://my.baganintel.ai/">details</a>
+                                <a className="blue" href="https://my.baganintel.ai/">link</a>
                             </p>
                         </div> 
                     </div>
@@ -448,7 +448,7 @@ export default function Home() {
                                 <code className='mr-2'>BTI</code>
                                 <strong className='mr-2'>Project:</strong> 
                                 <code className='mr-2'>BI Miner</code>
-                                <a className="blue" href="https://my.baganintel.ai/">details</a>
+                                <a className="blue" href="https://my.baganintel.ai/">link</a>
                             </p>
                         </div> 
                     </div> 
