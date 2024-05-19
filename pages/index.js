@@ -264,7 +264,7 @@ export default function Home() {
                             <p>
                                 <strong className="mr-2">Project:</strong>
                                 <code className='mr-2'>Tharapa Portal</code>
-                                <span> Stock management system , sale order processing and customer information.</span>   
+                                <span className='mr-2'>Stock management system , sale order processing and customer information.</span>   
                                 <a className="blue" href="https://portal.tharapa.ai/sales-dashboard">link</a></p>
                         </div> 
                         <div className="text-container">
@@ -276,7 +276,7 @@ export default function Home() {
                             <p>
                                 <strong className='mr-2'>Project:</strong> 
                                 <code className='mr-2'>BI Miner</code>
-                                <span>Facebook Page analytic management system.</span>  
+                                <span className='mr-2'>Facebook Page analytic management system.</span>  
                                 <a className="blue" href="https://my.baganintel.ai/">link</a></p>
                         </div>
                         <div className="text-container">
