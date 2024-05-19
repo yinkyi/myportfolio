@@ -456,7 +456,7 @@ export default function Home() {
             </div> 
         </div> 
         
-         <div className="cards-1">
+         <div id="testimonial" className="cards-1">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -468,8 +468,7 @@ export default function Home() {
                     
                     <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">I have had the pleasure of working with Yin Yin Kyi, our Senior Full Stack Engineer. She is highly skilled, works independently, and consistently delivers excellent results. She is proactive in self-learning new technologies and is always ready to help her teammates. She provides great support to junior members, making her an invaluable part of our team.
-”</p>
+                                <p className="testimonial-text">“I have had the pleasure of working with Yin Yin Kyi, our Senior Full Stack Engineer. She is highly skilled, works independently, and consistently delivers excellent results. She is proactive in self-learning new technologies and is always ready to help her teammates. She provides great support to junior members, making her an invaluable part of our team.”</p>
                                 <div className="details">
                                     <img src="images/testimonial-5.jpeg" alt="alternative"/>
                                     <div className="text">
@@ -483,8 +482,7 @@ export default function Home() {
                      
                         <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">Yin Yin Kyi is a smart and hardworking individual. As a senior full stack developer, she consistently delivers excellent work. Her technical skills are top-notch, and she is always willing to help her teammates. Yin Yin tackles challenges with ease and brings innovative solutions to the table. Her dedication and professionalism make her a valuable asset to any team. I am continually impressed by her contributions and positive attitude.
-”</p>
+                                <p className="testimonial-text">“Yin Yin Kyi is a smart and hardworking individual. As a senior full stack developer, she consistently delivers excellent work. Her technical skills are top-notch, and she is always willing to help her teammates. Yin Yin tackles challenges with ease and brings innovative solutions to the table. Her dedication and professionalism make her a valuable asset to any team. I am continually impressed by her contributions and positive attitude.”</p>
                                 <div className="details">
                                     <img src="images/testimonial-4.jpeg" alt="alternative"/>
                                     <div className="text">
@@ -497,8 +495,7 @@ export default function Home() {
                     
                         <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">Working with Yin Yin Kyi has been a fantastic experience. As an Android developer, I appreciate her expertise in full-stack development. Her ability to seamlessly integrate mobile apps and back-end systems has greatly enhanced our projects. She is skilled, reliable, and always delivers high-quality work on time.
-”</p>
+                                <p className="testimonial-text">“Working with Yin Yin Kyi has been a fantastic experience. As an Android developer, I appreciate her expertise in full-stack development. Her ability to seamlessly integrate mobile apps and back-end systems has greatly enhanced our projects. She is skilled, reliable, and always delivers high-quality work on time.”</p>
                                 <div className="details">
                                     <img src="images/testimonial-6.jpeg" alt="alternative"/>
                                     <div className="text">
@@ -541,7 +538,8 @@ export default function Home() {
 
                         <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">“Yin Yin Kyi is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                                <p className="testimonial-text">“Yin Yin is a highly skilled full-stack developer who possesses a mastery of various development tools. Her expertise goes beyond coding, as she's also adept at architectural design. This makes her a valuable asset to her team, as she can effectively troubleshoot and solve technical challenges.
+This version highlights Yin Yin's key strengths as a full-stack developer and emphasizes her problem-solving abilities. It also avoids redundancy and uses concise language.”</p>
                                 <div className="details">
                                     <img src="images/testimonial-7.jpeg" alt="alternative"/>
                                     <div className="text">
@@ -651,19 +649,20 @@ export default function Home() {
                 <div className="row mb-2">
                     <div className="col-lg-12">
                         <h2>Contact details</h2>
-                        <p>For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following</p>
+                        <p>
+                            <span className='mr-2'>The most effective way to contact me is by using the contact form, messaging me on </span>
+                            <code><a className='blue' href="https://www.linkedin.com/in/yin-yin-kyi-1a631274/" target="_blank" rel="noopener noreferrer">LinkedIn</a></code>
+                            <span className='mr-2 ml-2'>, or emailing me directly at</span>
+                            <code><a className='blue' href="mailto:yinyinkyi90@gmail.com">yinyinkyi90@gmail.com</a></code>.</p>
+
                     </div> 
-                    <div className="col-lg-12">
-                        <code>email : <a className="blue no-line" href="#your-link">yinyinkyi90@gmail.com</a></code>
-                    </div>
-                    <div className="col-lg-12">
-                        <code>phone : <a className="blue no-line" href="tel:+66955344187">(+66) 0955344187</a></code>
-                    </div>  
+                  
                 </div> 
                 
                 <div className="row">
                     <div className="col-lg-12">
                         <form id="contactForm">
+                            <h6>Contact Form</h6>
                             <div className={`form-group  ${validityState.name?'':classes.invalid}`}>
                                 <input type="text" className="form-control-input" id="cname" value={name} onChange={(e)=>setName(e.target.value)} required/>
                                 <label className="label-control" htmlFor="cname">Name</label>

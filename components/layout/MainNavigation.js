@@ -40,6 +40,9 @@ function MainNavigation() {
                         <Link className="page-scroll" href="/#projects"><a className="nav-link">Projects</a></Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="page-scroll" href="/#testimonial"><a className="nav-link">Testimonials</a></Link>
+                    </li>
+                    <li className="nav-item">
                         <Link className="page-scroll" href="/#contact"><a className="nav-link">Contact</a></Link>
                     </li>
                 </ul>
