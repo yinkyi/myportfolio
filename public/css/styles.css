@@ -138,6 +138,24 @@ a:hover {
 	color: #2259ec;
 }
 
+code {
+    font-family: 'Courier New', Courier, monospace;
+	color: black;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+
 .bg-gray {
 	background-color: #f7f9fb;
 }

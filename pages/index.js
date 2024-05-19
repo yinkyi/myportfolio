@@ -222,7 +222,13 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-1.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Tharapa Mart, Developed for ecommerence platform.  <a className="blue" href="https://tharapamart.com/">details</a></p>
+                            
+                            <p>
+                                <strong className="mr-2">Project:</strong>
+                                <code className="ml-2">Tharapa Mart</code> 
+                                <span> Developed for e-commerce platform. </span>
+                                <a href="https://tharapamart.com/" className="blue ml-2">details</a>
+                            </p>
                         </div>
                         <div className="text-container">
                             <div className="image-container">
@@ -230,7 +236,12 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-2.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Chatbot,  content management system for chatbot building. <a className="blue" href="https://chatbot.tharapa.ai/automation">details</a></p>
+                            <p>
+                                <strong className="mr-2">Project:</strong>
+                                <code className="ml-2">Chatbot</code>
+                                <span> Content management system for chatbot building. </span>
+                                 <a className="blue" href="https://chatbot.tharapa.ai/automation">details</a>
+                            </p>
                         </div> 
                         <div className="text-container">
                             <div className="image-container">
@@ -238,7 +249,11 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-4.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Thrapa Chat, Create live chat environment for virtual facebook messenger and viber to communicate with their customers. <a className="blue" href="https://livechat.tharapa.ai/">details</a></p>
+                                <strong className="mr-2">Project:</strong>
+                                <code className="ml-2">Thrapa Chat</code>
+                                <span> Create live chat environment for virtual facebook messenger and viber to communicate with their customers. </span>
+                                 <a className="blue" href="https://livechat.tharapa.ai/">details</a>
+                           
                         </div> 
                         <div className="text-container">
                             <div className="image-container">
@@ -246,7 +261,11 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-3.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> Tharapa Portal,  Stock management system , sale order processing and customer information. <a className="blue" href="https://portal.tharapa.ai/sales-dashboard">details</a></p>
+                            <p>
+                                <strong className="mr-2">Project:</strong>
+                                <code className='mr-2'>Tharapa Portal</code>
+                                <span> Stock management system , sale order processing and customer information.</span>   
+                                <a className="blue" href="https://portal.tharapa.ai/sales-dashboard">links</a></p>
                         </div> 
                         <div className="text-container">
                             <div className="image-container">
@@ -254,7 +273,11 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-project-5.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> BI Miner,  Facebook Page analytic management system. <a className="blue" href="https://my.baganintel.ai/">details</a></p>
+                            <p>
+                                <strong className='mr-2'>Project:</strong> 
+                                <code className='mr-2'>BI Miner</code>
+                                <span>Facebook Page analytic management system.</span>  
+                                <a className="blue" href="https://my.baganintel.ai/">links</a></p>
                         </div>
                         <div className="text-container">
                             <div className="image-container">
@@ -262,7 +285,10 @@ export default function Home() {
                                     <img className="img-fluid" src="images/pos_admin/1.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>Project:</strong> POS BackOffice Platform. <a className="blue" href="http://18.143.244.78/">details</a></p>
+                            <p>
+                                <strong className='mr-2'>Project:</strong> 
+                                <code className='mr-2'>POS BackOffice Platform</code>
+                                <a className="blue" href="http://18.143.244.78/">links</a></p>
                         </div> 
                     </div> 
                 </div> 
@@ -279,7 +305,12 @@ export default function Home() {
                                     <img className="img-fluid" src="images/pos_terminal/1.png" alt="alternative"/>
                                 </a>
                             </div>
-                            <p><strong>For:</strong> RingZero, <strong>Project:</strong> POS Terminal.</p>
+                            <p>
+                                <strong className='mr-2'>For:</strong> 
+                                <code className='mr-2'>RingZero</code>
+                                <strong className='mr-2'>Project:</strong> 
+                                <code>POS Terminal</code>
+                            </p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
@@ -288,7 +319,7 @@ export default function Home() {
                                
                                     <img className="img-fluid" src="images/pos_terminal/2.png" alt="alternative"/>
                             </div> 
-                            <p> Sale Transaction.</p>
+                            <p> <code className='mr-2'>Sale Transaction</code> </p>
                         </div> 
                     </div> 
                     <div className="col-lg-4">
@@ -298,7 +329,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/pos_terminal/3.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p> Sale Refund or Void</p>
+                            <p> <code className='mr-2'>Sale Refund or Void</code> </p>
                         </div> 
                     </div>
                 </div> 
@@ -310,7 +341,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/pos_terminal/4.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p> Sale Refund or Void</p>
+                            <p> <code className='mr-2'>Sale Refund Transaction</code> </p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
@@ -320,7 +351,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/pos_terminal/6.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p> Stock Adjustment</p>
+                            <p> <code className='mr-2'>Stock Adjustment</code> </p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
@@ -330,7 +361,7 @@ export default function Home() {
                                     <img className="img-fluid" src="images/pos_terminal/7.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p> Setting</p>
+                            <p> <code className='mr-2'>Setting</code> </p>
                         </div> 
                     </div> 
                 </div> 
@@ -347,7 +378,13 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-work-1.png" alt="alternative"/>
                                 </a>
                             </div>
-                            <p><strong>For:</strong> BIT, <strong>Project:</strong> Bagan Innovation Technology's tharapa product landing page website. <a className="blue" href="https://tharapa.ai/">details</a></p>
+                            <p>
+                                <strong className='mr-2'>For:</strong> 
+                                <code className='mr-2'>BIT</code>
+                                <strong className='mr-2'>Project:</strong> 
+                                <span className='mr-2'>Bagan Innovation Technology's tharapa product landing page website. </span>
+                                <a className="blue" href="https://tharapa.ai/">details</a>
+                            </p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
@@ -356,7 +393,12 @@ export default function Home() {
                                
                                     <img className="img-fluid" src="images/my-work-2.png" alt="alternative"/>
                             </div> 
-                            <p><strong>For:</strong> Tharapa Chat, <strong>Project:</strong> Sample messenger bot UI.</p>
+                            <p>
+                                <strong className='mr-2'>For:</strong> 
+                                <code className='mr-2'>BIT</code>
+                                <strong className='mr-2'>Project:</strong> 
+                                <code className='mr-2'>Tharapa Chat</code>
+                            </p>
                         </div> 
                     </div> 
                     <div className="col-lg-4">
@@ -366,7 +408,14 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-work-3.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>For:</strong> Cyber King Co.,Ltd., <strong>Project:</strong> Web design for Cyber King Co.,Ltd.  <a className="blue" href="http://www.cyberkingict.com/">details</a></p>
+                            <p>
+                                <strong className='mr-2'>For:</strong> 
+                                <code className='mr-2'>Cyber King</code>
+                                <strong className='mr-2'>Project:</strong> 
+                                <code className='mr-2'>Website</code>
+                                <a className="blue" href="http://www.cyberkingict.com/">details</a>
+                            </p>
+                           
                         </div> 
                     </div>
                 </div> 
@@ -374,21 +423,17 @@ export default function Home() {
                     <div className="col-lg-4">
                         <div className="text-container">
                             <div className="image-container">
-                                <a href="https://www.readsnote.com/">
-                                    <img className="img-fluid" src="images/my-work-4.png" alt="alternative"/>
-                                </a>
-                            </div> 
-                            <p><strong>For:</strong> Creation product, <strong>Project:</strong> Books Portal System. <a className="blue" href="https://www.readsnote.com/">details</a></p>
-                        </div> 
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="text-container">
-                            <div className="image-container">
                                 <a href="https://my.baganintel.ai/">
                                     <img className="img-fluid" src="images/my-work-5.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="https://my.baganintel.ai/">details</a></p>
+                            <p>
+                                <strong className='mr-2'>For:</strong> 
+                                <code className='mr-2'>BTI</code>
+                                <strong className='mr-2'>Project:</strong> 
+                                <code className='mr-2'>BI Miner</code>
+                                <a className="blue" href="https://my.baganintel.ai/">details</a>
+                            </p>
                         </div> 
                     </div>
                     <div className="col-lg-4">
@@ -398,7 +443,13 @@ export default function Home() {
                                     <img className="img-fluid" src="images/my-work-6.png" alt="alternative"/>
                                 </a>
                             </div> 
-                            <p><strong>For:</strong> BI Miner, <strong>Project:</strong> Chart in BI Miner. <a className="blue" href="https://my.baganintel.ai/">details</a></p>
+                            <p>
+                                <strong className='mr-2'>For:</strong> 
+                                <code className='mr-2'>BTI</code>
+                                <strong className='mr-2'>Project:</strong> 
+                                <code className='mr-2'>BI Miner</code>
+                                <a className="blue" href="https://my.baganintel.ai/">details</a>
+                            </p>
                         </div> 
                     </div> 
                 </div> 
@@ -417,16 +468,18 @@ export default function Home() {
                     
                     <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">“She is a kind person who always helps and shares new knowledges with her team members”</p>
+                                <p className="testimonial-text">I have had the pleasure of working with Yin Yin Kyi, our Senior Full Stack Engineer. She is highly skilled, works independently, and consistently delivers excellent results. She is proactive in self-learning new technologies and is always ready to help her teammates. She provides great support to junior members, making her an invaluable part of our team.
+”</p>
                                 <div className="details">
-                                    <img src="images/testimonial-3.jpg" alt="alternative"/>
+                                    <img src="images/testimonial-5.jpeg" alt="alternative"/>
                                     <div className="text">
-                                        <div className="testimonial-author">Adithep Sudcharee</div>
-                                        <div className="occupation">Front-end Developer - RingZero</div>
-                                    </div>
+                                        <div className="testimonial-author">Pyae Phyo Hein</div>
+                                        <div className="occupation">Project Manager - Bagan Innovation Technology</div>
+                                    </div> 
                                 </div> 
                             </div>
-                        </div>
+                    </div>
+                    
                      
                         <div className="card">
                             <div className="card-body">
@@ -458,29 +511,29 @@ export default function Home() {
                        
 
                     </div>
-                    {/* <div className="col-lg-12">
+                     <div className="col-lg-12">
                     
-                        <div className="card">
+                     <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                                <p className="testimonial-text">“She is a kind person who always helps and shares new knowledges with her team members”</p>
                                 <div className="details">
-                                    <img src="images/testimonial-1.jpeg" alt="alternative"/>
+                                    <img src="images/testimonial-3.jpg" alt="alternative"/>
                                     <div className="text">
-                                        <div className="testimonial-author">Pyae Phyo Hein</div>
-                                        <div className="occupation">Project Manager - Bagan Innovation Technology</div>
-                                    </div> 
+                                        <div className="testimonial-author">Adithep Sudcharee</div>
+                                        <div className="occupation">Front-end Developer - RingZero IT Service Co.,Ltd</div>
+                                    </div>
                                 </div> 
                             </div>
                         </div>
                      
                         <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">“Loved to work with Mark he's such an awesome developer with great attention to details. He also has a great eye for design”</p>
+                                <p className="testimonial-text">“Loved to work with Yin Yin she's such an awesome developer with great attention to details. She also has a great eye for design”</p>
                                 <div className="details">
                                     <img src="images/testimonial-1.jpeg" alt="alternative"/>
                                     <div className="text">
                                         <div className="testimonial-author">Chan Nyein Kyaw</div>
-                                        <div className="occupation">Technical Lead- RingZero</div>
+                                        <div className="occupation">Technical Lead- RingZero IT Service Co.,Ltd</div>
                                     </div> 
                                 </div> 
                             </div>
@@ -488,21 +541,21 @@ export default function Home() {
 
                         <div className="card">
                             <div className="card-body">
-                                <p className="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                                <p className="testimonial-text">“Yin Yin Kyi is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
                                 <div className="details">
-                                    <img src="images/testimonial-5.jpeg" alt="alternative"/>
+                                    <img src="images/testimonial-7.jpeg" alt="alternative"/>
                                     <div className="text">
-                                        <div className="testimonial-author">Pyae Phyo Hein</div>
-                                        <div className="occupation">Project Manager - Bagan Innovation Technology</div>
+                                        <div className="testimonial-author">Ananth Nag KV</div>
+                                        <div className="occupation">Technical QA Lead - RingZero Game Studio Ltd</div>
                                     </div> 
                                 </div> 
                             </div>
-                        </div>
+                        </div> 
                     
                         
                        
 
-                    </div> */}
+                    </div> 
                 </div> 
             </div> 
         </div> 
@@ -595,16 +648,16 @@ export default function Home() {
      
         <div id="contact" className="form-1 bg-gray">
             <div className="container">
-                <div className="row">
+                <div className="row mb-2">
                     <div className="col-lg-12">
                         <h2>Contact details</h2>
-                        <p className="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following</p>
+                        <p>For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following</p>
                     </div> 
                     <div className="col-lg-12">
-                        <p>email : <a className="blue no-line" href="#your-link">yinyinkyi90@gmail.com</a></p>
+                        <code>email : <a className="blue no-line" href="#your-link">yinyinkyi90@gmail.com</a></code>
                     </div>
                     <div className="col-lg-12">
-                        <p>phone : <a className="blue no-line" href="tel:+66955344187">(+66) 0955344187</a></p>
+                        <code>phone : <a className="blue no-line" href="tel:+66955344187">(+66) 0955344187</a></code>
                     </div>  
                 </div> 
                 
